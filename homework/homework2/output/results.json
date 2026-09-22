@@ -400,6 +400,30 @@
       }
     }
   ],
+  "bond_symmetry_groups": [
+    {
+      "name": "leg",
+      "bonds": [
+        "(0,1)",
+        "(1,2)",
+        "(3,4)",
+        "(4,5)"
+      ]
+    },
+    {
+      "name": "outer_rung",
+      "bonds": [
+        "(0,3)",
+        "(2,5)"
+      ]
+    },
+    {
+      "name": "center_rung",
+      "bonds": [
+        "(1,4)"
+      ]
+    }
+  ],
   "V0_mu2": {
     "ground_energy_33": -15.619321323957559,
     "local_density": [
@@ -523,6 +547,15 @@
       },
       "passed": true,
       "detects": "q 网格、相位符号、坐标或 1/N 归一化错误"
+    },
+    {
+      "target": "V 扫描中的键反射对称性",
+      "expected": "四条腿键相等，两条外侧横档相等，中心横档单独一类",
+      "measured": {
+        "maximum_group_spread": 1.0547118733938987e-14
+      },
+      "passed": true,
+      "detects": "键编号、空间反射对称性或扫描数据归并错误"
     },
     {
       "target": "V=0 半填充化学势",

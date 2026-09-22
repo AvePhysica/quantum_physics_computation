@@ -15,5 +15,5 @@
 - [x] 用粒子数和规则、自旋和规则、Hellmann-Feynman 有限差分校检观测量。
 - [x] 计算 8 项必做结果以及 3 项选做结果。
 - [x] 生成 `results.md`、`results.json`、`V_scan.csv` 和 `V_scan.png`。
-- [x] 编写 `README.md`，说明原理、代码、结果、校检、物理讨论和 AI 使用记录。
+- [x] 编写 `README.md`，说明原理、代码、结果、校检和物理讨论；将 AI 对话及修改记录单独写入 `agent_conversation.md`。
 - [x] 从干净进程运行测试和主程序，核对所有生成文件。

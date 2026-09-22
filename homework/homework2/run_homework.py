@@ -36,6 +36,11 @@ from observables import (
 OUTPUT_DIRECTORY = Path(__file__).resolve().parent / "output"
 DEFAULT_PARAMETERS = {"t": 1.0, "u": 4.0, "v": 1.0, "mu": 4.0}
 TOLERANCE = 1e-8
+BOND_SYMMETRY_GROUPS = (
+    ("leg", LEG_BONDS),
+    ("outer_rung", ((0, 3), (2, 5))),
+    ("center_rung", ((1, 4),)),
+)
 
 
 def ground_degeneracy(energies: np.ndarray) -> int:
@@ -108,6 +113,28 @@ def v_scan() -> list[dict[str, object]]:
     return scan
 
 
+def reduce_symmetric_bonds(
+    bond_density: dict[str, float], tolerance: float = 1e-10
+) -> list[dict[str, object]]:
+    """将 7 条键归并为反射对称性允许的 3 类，并验证组内数值相等。"""
+    reduced = []
+    for name, bonds in BOND_SYMMETRY_GROUPS:
+        values = np.array([bond_density[f"({i},{j})"] for i, j in bonds])
+        spread = float(np.max(values) - np.min(values))
+        if spread > tolerance:
+            raise ValueError(f"对称等价键 {bonds} 不相等：最大差为 {spread}")
+        reduced.append(
+            {
+                "name": name,
+                "bonds": [f"({i},{j})" for i, j in bonds],
+                "multiplicity": len(bonds),
+                "value": float(np.mean(values)),
+                "spread": spread,
+            }
+        )
+    return reduced
+
+
 def save_v_scan(scan: list[dict[str, object]]) -> None:
     csv_path = OUTPUT_DIRECTORY / "V_scan.csv"
     with csv_path.open("w", newline="", encoding="utf-8-sig") as stream:
@@ -119,23 +146,49 @@ def save_v_scan(scan: list[dict[str, object]]) -> None:
                 + [row["bond_density"][f"({i},{j})"] for i, j in BONDS]
             )
 
-    figure, axes = plt.subplots(1, 2, figsize=(12, 4.5))
+    figure, axes = plt.subplots(1, 2, figsize=(13, 4.8))
     v_values = [row["V"] for row in scan]
     axes[0].plot(v_values, [row["D"] for row in scan], "o-", color="black")
     axes[0].set(xlabel="V", ylabel="D", title="Average double occupancy")
     axes[0].grid(alpha=0.3)
 
-    for i, j in BONDS:
-        kind = "leg" if (i, j) in LEG_BONDS else "rung"
+    reduced_rows = [reduce_symmetric_bonds(row["bond_density"]) for row in scan]
+    styles = (
+        ("tab:red", "o", "4 leg bonds overlap:\n(0,1)=(1,2)=(3,4)=(4,5)", "4x leg overlap", 7),
+        ("tab:purple", "s", "2 outer rungs overlap:\n(0,3)=(2,5)", "2x outer-rung overlap", 9),
+        ("tab:brown", "^", "Center rung only: (1,4)", "center rung only", 10),
+    )
+    for group_index, (color, marker, legend, endpoint_label, y_offset) in enumerate(styles):
+        values = [groups[group_index]["value"] for groups in reduced_rows]
         axes[1].plot(
             v_values,
-            [row["bond_density"][f"({i},{j})"] for row in scan],
-            "o-",
-            label=f"({i},{j}) {kind}",
+            values,
+            marker=marker,
+            color=color,
+            linewidth=2,
+            label=legend,
+        )
+        axes[1].annotate(
+            endpoint_label,
+            xy=(v_values[-1], values[-1]),
+            xytext=(8, y_offset),
+            textcoords="offset points",
+            fontsize=8,
+            color=color,
+            va="center",
         )
     axes[1].set(xlabel="V", ylabel=r"$\langle n_i n_j\rangle$", title="Bond density correlations")
+    axes[1].set_xlim(min(v_values) - 0.1, max(v_values) + 0.95)
     axes[1].grid(alpha=0.3)
-    axes[1].legend(fontsize=8, ncol=2)
+    axes[1].legend(fontsize=7.5, loc="upper right")
+    axes[1].text(
+        0.03,
+        0.05,
+        "7 bonds form 3 visible curves\nby left-right and up-down reflections",
+        transform=axes[1].transAxes,
+        fontsize=8,
+        bbox={"boxstyle": "round", "facecolor": "white", "alpha": 0.8},
+    )
     figure.tight_layout()
     figure.savefig(OUTPUT_DIRECTORY / "V_scan.png", dpi=180)
     plt.close(figure)
@@ -181,6 +234,11 @@ def calculate() -> dict[str, object]:
 
     scan = v_scan()
     save_v_scan(scan)
+    max_bond_symmetry_spread = max(
+        group["spread"]
+        for row in scan
+        for group in reduce_symmetric_bonds(row["bond_density"])
+    )
 
     # V=0 的标准 Hubbard 模型在半填充处取 mu=U/2=2，显式检查全局基态填充。
     v0_parameters = {"t": 1.0, "u": 4.0, "v": 0.0, "mu": 2.0}
@@ -310,6 +368,13 @@ def calculate() -> dict[str, object]:
             "detects": "q 网格、相位符号、坐标或 1/N 归一化错误",
         },
         {
+            "target": "V 扫描中的键反射对称性",
+            "expected": "四条腿键相等，两条外侧横档相等，中心横档单独一类",
+            "measured": {"maximum_group_spread": max_bond_symmetry_spread},
+            "passed": bool(max_bond_symmetry_spread < 1e-10),
+            "detects": "键编号、空间反射对称性或扫描数据归并错误",
+        },
+        {
             "target": "V=0 半填充化学势",
             "expected": "mu=U/2=2 时全局基态包含 (3,3) 扇区",
             "measured": {"ground_sectors": v0_ground_sectors, "energy": global_v0_minimum},
@@ -346,6 +411,10 @@ def calculate() -> dict[str, object]:
             "charge": {f"({n},{y})": value for (n, y), value in charge_structure.items()},
         },
         "V_scan": scan,
+        "bond_symmetry_groups": [
+            {"name": name, "bonds": [f"({i},{j})" for i, j in bonds]}
+            for name, bonds in BOND_SYMMETRY_GROUPS
+        ],
         "V0_mu2": {
             "ground_energy_33": float(energies_v0[0]),
             "local_density": local_densities(state_v0, basis_v0).tolist(),
@@ -436,6 +505,14 @@ def write_markdown(result: dict[str, object]) -> None:
         "## 选做 10：V 扫描",
         "",
         "数值见 `output/V_scan.csv`，图见 `output/V_scan.png`。",
+        "",
+        "右图虽然包含全部 7 条键的数据，但只有 3 条可分辨曲线。这不是漏画，而是对称等价键在每个 `V` 点都严格重合：",
+        "",
+        "- 四条腿键 `(0,1)`、`(1,2)`、`(3,4)`、`(4,5)` 重合为一条曲线；",
+        "- 两条外侧横档 `(0,3)`、`(2,5)` 重合为一条曲线；",
+        "- 中心横档 `(1,4)` 单独构成一条曲线。",
+        "",
+        "原因是哈密顿量和非简并基态同时保持梯子的左右反射、上下两腿交换对称性。左右反射交换两端键，上下反射交换两条腿，因此同一对称轨道中的键具有相同的 $\\langle n_i n_j\\rangle$。CSV 仍保留全部 7 条键，图中则按三类对称不等价键显示，并直接标注重合数。",
         "",
         "## 选做 11：V=0",
         "",

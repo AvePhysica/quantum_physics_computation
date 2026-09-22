@@ -14,6 +14,7 @@ from observables import (
     spin_correlation_matrix,
     total_spin_squared,
 )
+from run_homework import reduce_symmetric_bonds
 
 
 class HubbardModelTests(unittest.TestCase):
@@ -22,6 +23,19 @@ class HubbardModelTests(unittest.TestCase):
             (0, 1), (1, 2), (3, 4), (4, 5), (0, 3), (1, 4), (2, 5)
         }
         self.assertEqual(set(BONDS), expected_bonds)
+
+    def test_bond_plot_reduces_seven_bonds_to_three_symmetry_classes(self):
+        values = {
+            "(0,1)": 0.8, "(1,2)": 0.8, "(3,4)": 0.8, "(4,5)": 0.8,
+            "(0,3)": 1.0, "(2,5)": 1.0, "(1,4)": 0.7,
+        }
+        reduced = reduce_symmetric_bonds(values)
+        self.assertEqual([group["multiplicity"] for group in reduced], [4, 2, 1])
+        self.assertTrue(np.allclose([group["value"] for group in reduced], [0.8, 1.0, 0.7]))
+
+        values["(1,2)"] = 0.81
+        with self.assertRaises(ValueError):
+            reduce_symmetric_bonds(values)
 
     def test_sector_dimension_is_binomial_product(self):
         for n_up, n_down in ((0, 0), (1, 2), (3, 3), (6, 6)):
