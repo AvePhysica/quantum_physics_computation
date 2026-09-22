@@ -1,0 +1,4 @@
+interface:
+  display_name: "量子物理计算.skill"
+  short_description: "分阶段协作完成量子物理计算作业并保留真实 AI 使用记录"
+  default_prompt: "使用 $quantum-physics-computation 读取这份作业文档，并从要求讲解和实现方案开始。"
