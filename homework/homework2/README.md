@@ -6,7 +6,7 @@ $$
 [H,N_\uparrow]=[H,N_\downarrow]=0
 $$
 
-按 $(N_\uparrow,N_\downarrow)$ 分成 49 个块；没有构造或对角化 `4096×4096` 稠密矩阵。最大的半满块维数只有
+按 $(N_\uparrow,N_\downarrow)$ 分成 49 个块。程序从未分配完整的 `4096×4096` 数组，也没有对这种完整矩阵做对角化；全局能谱和全局迹都由 49 个独立分块的结果汇总得到。最大的半满块维数只有
 
 $$
 \binom{6}{3}\binom{6}{3}=400.
@@ -17,9 +17,13 @@ $$
 - `hubbard_model.py`：格点、7 条键、固定粒子数比特基底、查找表、费米算符和分块哈密顿量。
 - `observables.py`：局域密度、自旋、双占据、密度/自旋关联、总自旋平方和结构因子。
 - `run_homework.py`：计算 49 个块、全部必做/选做量、校检、V 扫描并生成结果文件。
-- `test_homework.py`：8 个独立测试，覆盖解析极限、组合计数、厄米性、键的对称分组、和规则及 Hellmann-Feynman 关系。
+- `test_homework.py`：8 个正向测试，覆盖解析极限、组合计数、厄米性、键的对称分组、和规则及 Hellmann-Feynman 关系。
+- `negative_controls.py`：实际构造 4 个故意错误版本，并保存各校检的失败证据。
+- `test_negative_controls.py`：4 个负向单元测试，分别验证删键、翻转跃迁符号、漏掉 `U` 项和漏掉自旋翻转 `1/2` 系数都会被检出。
+- `generate_summary_pdf.py`：读取最新 JSON/PNG，在临时目录中编译并更新最终总结 PDF。
 - `output/results.md`：适合直接阅读的完整数值结果与校检清单。
 - `output/results.json`：同一结果的机器可读版本。
+- `output/negative_control_results.md`、`output/negative_control_results.json`：故意改错实验的实测记录。
 - `output/V_scan.csv`、`output/V_scan.png`：选做第 10 项的数据和图。
 - `output/Lecture02_Homework_Final_Summary.pdf`：整合作业方法、结果、校检和物理讨论的最终总结 PDF。
 - `IMPLEMENTATION_PLAN.md`：实现任务清单。
@@ -31,8 +35,10 @@ $$
 
 ```powershell
 python -m pip install -r requirements.txt
-python -m unittest test_homework.py -v
+python -m unittest discover -p "test*.py" -v
 python run_homework.py
+python negative_controls.py
+python generate_summary_pdf.py
 ```
 
 主程序会重新创建 `output` 中的结果。绘图使用 Matplotlib 的无界面 `Agg` 后端，因此不依赖 Tk，也不会弹出窗口。
@@ -128,6 +134,15 @@ $$
 
 当 `V=0` 时取 `mu=U/2=2`。这是二分格点标准 Hubbard 模型的半填充粒子-空穴对称点；程序还显式比较了 49 个扇区的基态能量，确认全局最低态位于 `(3,3)`。此时每个格点的密度都恢复为 1，平均双占据降为 `0.0956141918`。
 
+## 自驱分：额外完成的工作
+
+除题目要求的数值量之外，本项目还完成了以下可复核工作：
+
+1. 将 7 条键按空间对称性归并为 3 个可见类别，同时保留 CSV 中的全部 7 条原始数据，并对每个 `V` 点执行组内一致性数值校检。
+2. 同时使用 Hellmann-Feynman 有限差分、SU(2) 总自旋量子化、结构因子傅里叶和规则、原子极限和单粒子极限进行交叉验证。
+3. 真正运行 4 个故意改错实验，而非只分析预期：删键、翻转跃迁符号、漏掉 `U` 项、漏掉自旋翻转 `1/2` 系数都被相应独立校检拒绝。
+4. 提供可重复生成的总结 PDF，并对最终页面逐页渲染检查；LaTeX 中间文件只写入临时目录，不混入 `output`。
+
 ## 校检说明
 
 详细的“校检对象、期望、实测、结论、针对错误”表位于 `output/results.md`。核心校检如下：
@@ -141,4 +156,4 @@ $$
 7. **自旋交换对称性**：交换 `N_up` 和 `N_down` 后对应基态能量必须相等。会发现上下自旋实现不对称或能隙取错扇区。
 8. **结构因子和规则**：6 个离散 q 点求和必须等于实空间关联矩阵对角和。会发现坐标、相位或 `1/N` 归一化错误。
 
-故意改错的预期：若从 `BONDS` 删除一条横档，固定 7 键清单和单粒子矩阵校检会失败；若把跃迁前的负号改为正号，单粒子矩阵检查会失败；若漏掉 `U`、`V` 或 `mu` 项，解析迹检查会失败；若漏掉 `1/2` 自旋翻转系数，总自旋量子化检查会失败。
+故意改错已实际执行，记录见 `output/negative_control_results.md`。四个错误版本均被拒绝：删键和翻转跃迁符号使单粒子参考矩阵比较失败，漏掉 `U` 项使解析迹比较失败，漏掉 `1/2` 使 SU(2) 单态校检失败。负向测试结束后正式实现会保持不变。

@@ -2,7 +2,7 @@
 
 **Goal:** 用粒子数守恒分块精确对角化 2x3 扩展 Hubbard 梯子，完成全部必做与选做结果，并给出独立校检。
 
-**Architecture:** `hubbard_model.py` 负责比特基底、费米子符号与分块哈密顿量；`observables.py` 负责期望值和关联函数；`run_homework.py` 组合 49 个分块、输出结果并绘图；`test_homework.py` 用解析极限、和规则和有限差分校检实现。
+**Architecture:** `hubbard_model.py` 负责比特基底、费米子符号与分块哈密顿量；`observables.py` 负责期望值和关联函数；`run_homework.py` 组合 49 个分块、输出结果并绘图；`test_homework.py` 做正向校检；`negative_controls.py` 与 `test_negative_controls.py` 实际注入错误并证明独立校检会失败；`generate_summary_pdf.py` 在临时目录编译最新版总结 PDF。
 
 **Tech Stack:** Python 3、NumPy、SciPy、Matplotlib、标准库 unittest。
 
@@ -17,3 +17,6 @@
 - [x] 生成 `results.md`、`results.json`、`V_scan.csv` 和 `V_scan.png`。
 - [x] 编写 `README.md`，说明原理、代码、结果、校检和物理讨论；将 AI 对话及修改记录单独写入 `agent_conversation.md`。
 - [x] 从干净进程运行测试和主程序，核对所有生成文件。
+- [x] 运行 4 个负向测试：删键、翻转跃迁符号、漏 `U` 项、漏自旋翻转 `1/2` 系数。
+- [x] 在说明文档中明确列出自驱分工作。
+- [x] 重新生成总结 PDF，并保证 `output` 只保留最终交付物。

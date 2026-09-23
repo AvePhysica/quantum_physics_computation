@@ -1,0 +1,43 @@
+[
+  {
+    "id": "missing_bond",
+    "mutation": "从 H 删除横档键 (2,5)",
+    "validator": "(1,0) 单粒子矩阵与题目七键邻接矩阵逐元比较",
+    "expected_for_correct_code": "maximum_residual < 1e-10",
+    "measured": {
+      "maximum_residual": 1.0
+    },
+    "detected": true
+  },
+  {
+    "id": "flipped_hopping_sign",
+    "mutation": "把跃迁项整体从 -t 改成 +t",
+    "validator": "(1,0) 单粒子矩阵与带 -t 的参考矩阵逐元比较",
+    "expected_for_correct_code": "maximum_residual < 1e-10",
+    "measured": {
+      "maximum_residual": 2.0
+    },
+    "detected": true
+  },
+  {
+    "id": "missing_u_term",
+    "mutation": "从 H 的对角元中删除全部 U 双占据项",
+    "validator": "数值迹与独立组合计数得到的解析迹比较",
+    "expected_for_correct_code": "trace_error < 1e-10",
+    "measured": {
+      "trace_error": 92.99999999999994
+    },
+    "detected": true
+  },
+  {
+    "id": "missing_spin_half_factor",
+    "mutation": "在自旋关联的横向翻转项中漏掉 1/2",
+    "validator": "半填充非简并基态须满足 SU(2) 单态关系 <S_tot^2>=0",
+    "expected_for_correct_code": "abs(S2) < 1e-10",
+    "measured": {
+      "wrong_S2": -2.2148754555467933,
+      "singlet_error": 2.2148754555467933
+    },
+    "detected": true
+  }
+]
