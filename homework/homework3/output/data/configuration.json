@@ -1,0 +1,17 @@
+{
+  "n_sites": 8,
+  "n_up": 4,
+  "n_down": 4,
+  "hopping": 1.0,
+  "main_interaction": 4.0,
+  "eta": 0.11,
+  "random_seed": 20260928,
+  "eigensolver_tolerance": 1e-11,
+  "degeneracy_tolerance": 1e-08,
+  "continued_fraction_lanczos_steps": 480,
+  "spectral_lanczos_steps": 240,
+  "spectral_reference_lanczos_steps": 480,
+  "omega_min": -10.0,
+  "omega_max": 10.0,
+  "omega_points": 2001
+}

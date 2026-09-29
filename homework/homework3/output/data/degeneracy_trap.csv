@@ -1,0 +1,4 @@
+N,U,ground_energy,ground_degeneracy_in_computed_window,safety_criterion,single_particle_closed_shell_gap,criterion_one_site_times_N_safe,full_addition_weight,shortcut_addition_weight,full_removal_weight,shortcut_removal_weight,shortcut_max_deviation_from_exact_pair
+6,0.0,-8.000000000000005,1,positive free-fermion closed-shell gap,1.9999999999999998,True,6.000000000000004,6.0000000000000036,6.000000000000006,6.000000000000007,8.881784197001252e-16
+8,0.0,-9.65685424949239,4,positive free-fermion closed-shell gap,4.898587196589413e-16,False,8.000000000000007,6.0000000000000036,8.000000000000005,10.000000000000007,2.0000000000000036
+8,4.0,-4.603526299989212,1,unique interacting ground state with translation symmetry,not applicable,True,8.000000000000021,8.000000000000021,8.000000000000021,8.000000000000021,0.0

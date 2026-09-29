@@ -1,0 +1,1090 @@
+{
+  "configuration": {
+    "n_sites": 8,
+    "n_up": 4,
+    "n_down": 4,
+    "hopping": 1.0,
+    "main_interaction": 4.0,
+    "eta": 0.11,
+    "random_seed": 20260928,
+    "eigensolver_tolerance": 1e-11,
+    "degeneracy_tolerance": 1e-08,
+    "continued_fraction_lanczos_steps": 480,
+    "spectral_lanczos_steps": 240,
+    "spectral_reference_lanczos_steps": 480,
+    "omega_min": -10.0,
+    "omega_max": 10.0,
+    "omega_points": 2001
+  },
+  "environment": {
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "main_block": {
+    "counts": [
+      4,
+      4
+    ],
+    "dimension_formula": 4900,
+    "dimension_enumerated": 4900,
+    "ground_energy": -4.603526299989212,
+    "ground_degeneracy": 1,
+    "lowest_eigenvalues": [
+      -4.603526299989212,
+      -4.299992758433038,
+      -4.010153957643987,
+      -3.7057642394839445,
+      -3.7057642394839383,
+      -3.496356310215209,
+      -3.496356310215193,
+      -3.2445570984651995,
+      -3.2445570984651844,
+      -3.188090088857272
+    ],
+    "ground_residual": 1.5442687567723403e-14,
+    "matrix_free_sparse_relative_error": 1.2492788916282321e-16,
+    "hermiticity_residual": 0.0,
+    "interaction_trace_expected": 39200.0,
+    "interaction_trace_measured": 39200.0,
+    "explicit_sparse_ground_difference": 2.1316282072803006e-14
+  },
+  "deliberate_mutations": {
+    "flipped_hopping_sign_action_difference": 0.668088204757953,
+    "missing_boundary_action_difference": 0.1175068150919158,
+    "removed_interaction_trace_difference": 39200.0
+  },
+  "lanczos_six_step": {
+    "alphas": [
+      7.969693801741891,
+      8.08828166886504,
+      8.11004382175707,
+      8.294784953286957,
+      7.967699943100283,
+      8.011226046343229
+    ],
+    "b_report_b0_through_b5": [
+      0.0,
+      4.247326536045884,
+      5.456248501842502,
+      5.882923675899187,
+      6.4975269812514,
+      6.611801997836395
+    ],
+    "b_report_b1_through_b6": [
+      4.247326536045884,
+      5.456248501842502,
+      5.882923675899187,
+      6.4975269812514,
+      6.611801997836395,
+      6.613881647160168
+    ],
+    "terminal_b6": 6.613881647160168,
+    "T6": [
+      [
+        7.969693801741891,
+        4.247326536045884,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        4.247326536045884,
+        8.08828166886504,
+        5.456248501842502,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.456248501842502,
+        8.11004382175707,
+        5.882923675899187,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        5.882923675899187,
+        8.294784953286957,
+        6.4975269812514,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        6.4975269812514,
+        7.967699943100283,
+        6.611801997836395
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        6.611801997836395,
+        8.011226046343229
+      ]
+    ],
+    "orthogonality_residual": 6.850198423608305e-16,
+    "completed_columns_residual": 7.890694079594044e-15,
+    "full_recurrence_residual": 8.26159525684986e-15,
+    "ground_start_steps_before_breakdown": 1,
+    "ground_start_terminal_beta": 1.080692887274674e-14
+  },
+  "continued_fraction": {
+    "maximum_steps": 480,
+    "convergence_table": [
+      {
+        "z_real": 0.7,
+        "z_imag": 0.11,
+        "lanczos_steps": 4,
+        "cf_real": -0.06705376850833844,
+        "cf_imag": -0.0005158385823139766,
+        "direct_real": -0.06706495518612633,
+        "direct_imag": -0.0005212379114261766,
+        "absolute_deviation": 1.2421534317142906e-05
+      },
+      {
+        "z_real": 0.7,
+        "z_imag": 0.11,
+        "lanczos_steps": 8,
+        "cf_real": -0.06704937299759062,
+        "cf_imag": -0.0005188046043944334,
+        "direct_real": -0.06706495518612633,
+        "direct_imag": -0.0005212379114261766,
+        "absolute_deviation": 1.5771036195294732e-05
+      },
+      {
+        "z_real": 0.7,
+        "z_imag": 0.11,
+        "lanczos_steps": 16,
+        "cf_real": -0.06706759971717285,
+        "cf_imag": -0.0005180707182893068,
+        "direct_real": -0.06706495518612633,
+        "direct_imag": -0.0005212379114261766,
+        "absolute_deviation": 4.126094621098255e-06
+      },
+      {
+        "z_real": 0.7,
+        "z_imag": 0.11,
+        "lanczos_steps": 32,
+        "cf_real": -0.06706901722613318,
+        "cf_imag": -0.0005204111503503479,
+        "direct_real": -0.06706495518612633,
+        "direct_imag": -0.0005212379114261766,
+        "absolute_deviation": 4.145323014399265e-06
+      },
+      {
+        "z_real": 0.7,
+        "z_imag": 0.11,
+        "lanczos_steps": 64,
+        "cf_real": -0.06706464103958769,
+        "cf_imag": -0.0005215372997825806,
+        "direct_real": -0.06706495518612633,
+        "direct_imag": -0.0005212379114261766,
+        "absolute_deviation": 4.339601775416726e-07
+      },
+      {
+        "z_real": 0.7,
+        "z_imag": 0.11,
+        "lanczos_steps": 128,
+        "cf_real": -0.06706495488689046,
+        "cf_imag": -0.0005212382649284209,
+        "direct_real": -0.06706495518612633,
+        "direct_imag": -0.0005212379114261766,
+        "absolute_deviation": 4.631478640007445e-10
+      },
+      {
+        "z_real": 0.7,
+        "z_imag": 0.11,
+        "lanczos_steps": 256,
+        "cf_real": -0.06706495518612633,
+        "cf_imag": -0.0005212379114261767,
+        "direct_real": -0.06706495518612633,
+        "direct_imag": -0.0005212379114261766,
+        "absolute_deviation": 1.0842021724855044e-19
+      },
+      {
+        "z_real": 0.7,
+        "z_imag": 0.11,
+        "lanczos_steps": 480,
+        "cf_real": -0.06706495518612633,
+        "cf_imag": -0.0005212379114261767,
+        "direct_real": -0.06706495518612633,
+        "direct_imag": -0.0005212379114261766,
+        "absolute_deviation": 1.0842021724855044e-19
+      },
+      {
+        "z_real": -1.3,
+        "z_imag": 0.11,
+        "lanczos_steps": 4,
+        "cf_real": -0.05888668437839665,
+        "cf_imag": -0.0003919633850854982,
+        "direct_real": -0.05888892949466462,
+        "direct_imag": -0.0003927988610040539,
+        "absolute_deviation": 2.395530644178985e-06
+      },
+      {
+        "z_real": -1.3,
+        "z_imag": 0.11,
+        "lanczos_steps": 8,
+        "cf_real": -0.05888927239402175,
+        "cf_imag": -0.0003922539666334215,
+        "direct_real": -0.05888892949466462,
+        "direct_imag": -0.0003927988610040539,
+        "absolute_deviation": 6.438088569347444e-07
+      },
+      {
+        "z_real": -1.3,
+        "z_imag": 0.11,
+        "lanczos_steps": 16,
+        "cf_real": -0.05888942745094952,
+        "cf_imag": -0.00039235731128331333,
+        "direct_real": -0.05888892949466462,
+        "direct_imag": -0.0003927988610040539,
+        "absolute_deviation": 6.655273229237412e-07
+      },
+      {
+        "z_real": -1.3,
+        "z_imag": 0.11,
+        "lanczos_steps": 32,
+        "cf_real": -0.05888877572266761,
+        "cf_imag": -0.0003935782587144175,
+        "direct_real": -0.05888892949466462,
+        "direct_imag": -0.0003927988610040539,
+        "absolute_deviation": 7.944221912715724e-07
+      },
+      {
+        "z_real": -1.3,
+        "z_imag": 0.11,
+        "lanczos_steps": 64,
+        "cf_real": -0.058888929482254916,
+        "cf_imag": -0.00039279886283382596,
+        "direct_real": -0.05888892949466462,
+        "direct_imag": -0.0003927988610040539,
+        "absolute_deviation": 1.2543876958785648e-11
+      },
+      {
+        "z_real": -1.3,
+        "z_imag": 0.11,
+        "lanczos_steps": 128,
+        "cf_real": -0.05888892949466461,
+        "cf_imag": -0.00039279886100405384,
+        "direct_real": -0.05888892949466462,
+        "direct_imag": -0.0003927988610040539,
+        "absolute_deviation": 1.387789368652897e-17
+      },
+      {
+        "z_real": -1.3,
+        "z_imag": 0.11,
+        "lanczos_steps": 256,
+        "cf_real": -0.05888892949466461,
+        "cf_imag": -0.00039279886100405384,
+        "direct_real": -0.05888892949466462,
+        "direct_imag": -0.0003927988610040539,
+        "absolute_deviation": 1.387789368652897e-17
+      },
+      {
+        "z_real": -1.3,
+        "z_imag": 0.11,
+        "lanczos_steps": 480,
+        "cf_real": -0.05888892949466461,
+        "cf_imag": -0.00039279886100405384,
+        "direct_real": -0.05888892949466462,
+        "direct_imag": -0.0003927988610040539,
+        "absolute_deviation": 1.387789368652897e-17
+      },
+      {
+        "z_real": 5.0,
+        "z_imag": 0.11,
+        "lanczos_steps": 4,
+        "cf_real": -0.10045776179773382,
+        "cf_imag": -0.002036376546137441,
+        "direct_real": -0.09679506882400378,
+        "direct_imag": -0.0034958617296383743,
+        "absolute_deviation": 0.003942767659990901
+      },
+      {
+        "z_real": 5.0,
+        "z_imag": 0.11,
+        "lanczos_steps": 8,
+        "cf_real": -0.09610297125477281,
+        "cf_imag": -0.0012544842298273242,
+        "direct_real": -0.09679506882400378,
+        "direct_imag": -0.0034958617296383743,
+        "absolute_deviation": 0.0023457988281169067
+      },
+      {
+        "z_real": 5.0,
+        "z_imag": 0.11,
+        "lanczos_steps": 16,
+        "cf_real": -0.09924389886773992,
+        "cf_imag": -0.0022101449663954388,
+        "direct_real": -0.09679506882400378,
+        "direct_imag": -0.0034958617296383743,
+        "absolute_deviation": 0.0027658337221150207
+      },
+      {
+        "z_real": 5.0,
+        "z_imag": 0.11,
+        "lanczos_steps": 32,
+        "cf_real": -0.09428488887347697,
+        "cf_imag": -0.00559972943894461,
+        "direct_real": -0.09679506882400378,
+        "direct_imag": -0.0034958617296383743,
+        "absolute_deviation": 0.0032752500243932907
+      },
+      {
+        "z_real": 5.0,
+        "z_imag": 0.11,
+        "lanczos_steps": 64,
+        "cf_real": -0.09560106987218522,
+        "cf_imag": -0.0033386801348481133,
+        "direct_real": -0.09679506882400378,
+        "direct_imag": -0.0034958617296383743,
+        "absolute_deviation": 0.0012043004403738383
+      },
+      {
+        "z_real": 5.0,
+        "z_imag": 0.11,
+        "lanczos_steps": 128,
+        "cf_real": -0.09659907147096243,
+        "cf_imag": -0.0033461175235697375,
+        "direct_real": -0.09679506882400378,
+        "direct_imag": -0.0034958617296383743,
+        "absolute_deviation": 0.00024665419041715417
+      },
+      {
+        "z_real": 5.0,
+        "z_imag": 0.11,
+        "lanczos_steps": 256,
+        "cf_real": -0.09679485331065588,
+        "cf_imag": -0.003491032473109501,
+        "direct_real": -0.09679506882400378,
+        "direct_imag": -0.0034958617296383743,
+        "absolute_deviation": 4.834062952092131e-06
+      },
+      {
+        "z_real": 5.0,
+        "z_imag": 0.11,
+        "lanczos_steps": 480,
+        "cf_real": -0.09679506981807894,
+        "cf_imag": -0.003495861186829114,
+        "direct_real": -0.09679506882400378,
+        "direct_imag": -0.0034958617296383743,
+        "absolute_deviation": 1.1326196659979928e-09
+      }
+    ],
+    "final_absolute_deviations": {
+      "(0.7+0.11j)": 1.0842021724855044e-19,
+      "(-1.3+0.11j)": 1.387789368652897e-17,
+      "(5+0.11j)": 1.1326196659979928e-09
+    }
+  },
+  "spectra": {
+    "rho_zero_ratio_table": [
+      {
+        "U": 0.0,
+        "rho_zero": 11.749027546026046,
+        "rho_max": 11.845930849894454,
+        "rho_zero_over_rho_max": 0.9918196969831821,
+        "chemical_potential": 3.552713678800501e-15,
+        "particle_hole_add_rem_pointwise_relative_error": 4.5209998928882717e-14
+      },
+      {
+        "U": 2.0,
+        "rho_zero": 0.9194888918278353,
+        "rho_max": 9.88434614381344,
+        "rho_zero_over_rho_max": 0.09302475636219383,
+        "chemical_potential": 1.0000000000000067,
+        "particle_hole_add_rem_pointwise_relative_error": 5.792920913990891e-08
+      },
+      {
+        "U": 4.0,
+        "rho_zero": 0.20967165824833164,
+        "rho_max": 7.613997056838609,
+        "rho_zero_over_rho_max": 0.02753765948202099,
+        "chemical_potential": 2.000000000000002,
+        "particle_hole_add_rem_pointwise_relative_error": 3.382255696057721e-07
+      },
+      {
+        "U": 6.0,
+        "rho_zero": 0.0863985968629701,
+        "rho_max": 6.648692822117128,
+        "rho_zero_over_rho_max": 0.012994824572968976,
+        "chemical_potential": 3.000000000000001,
+        "particle_hole_add_rem_pointwise_relative_error": 3.180261753338403e-07
+      },
+      {
+        "U": 8.0,
+        "rho_zero": 0.044751281039578386,
+        "rho_max": 6.2740295122774175,
+        "rho_zero_over_rho_max": 0.0071327814049975775,
+        "chemical_potential": 4.000000000000002,
+        "particle_hole_add_rem_pointwise_relative_error": 1.5767031569918036e-12
+      }
+    ],
+    "weight_table": [
+      {
+        "U": 0.0,
+        "addition_weight": 8.000000000000005,
+        "removal_weight": 8.000000000000007,
+        "addition_error_from_N": 5.329070518200751e-15,
+        "removal_error_from_N": 7.105427357601002e-15
+      },
+      {
+        "U": 2.0,
+        "addition_weight": 7.999999999999994,
+        "removal_weight": 7.999999999999995,
+        "addition_error_from_N": -6.217248937900877e-15,
+        "removal_error_from_N": -5.329070518200751e-15
+      },
+      {
+        "U": 4.0,
+        "addition_weight": 8.000000000000021,
+        "removal_weight": 8.000000000000021,
+        "addition_error_from_N": 2.1316282072803006e-14,
+        "removal_error_from_N": 2.1316282072803006e-14
+      },
+      {
+        "U": 6.0,
+        "addition_weight": 7.999999999999984,
+        "removal_weight": 7.999999999999984,
+        "addition_error_from_N": -1.5987211554602254e-14,
+        "removal_error_from_N": -1.5987211554602254e-14
+      },
+      {
+        "U": 8.0,
+        "addition_weight": 7.999999999999996,
+        "removal_weight": 7.999999999999995,
+        "addition_error_from_N": -4.440892098500626e-15,
+        "removal_error_from_N": -5.329070518200751e-15
+      }
+    ],
+    "u0_relative_max_error": 8.66740036037343e-14,
+    "chemical_potentials": {
+      "0.0": 3.552713678800501e-15,
+      "2.0": 1.0000000000000067,
+      "4.0": 2.000000000000002,
+      "6.0": 3.000000000000001,
+      "8.0": 4.000000000000002
+    }
+  },
+  "degeneracy_trap": [
+    {
+      "N": 6,
+      "U": 0.0,
+      "ground_energy": -8.000000000000005,
+      "ground_degeneracy_in_computed_window": 1,
+      "safety_criterion": "positive free-fermion closed-shell gap",
+      "single_particle_closed_shell_gap": 1.9999999999999998,
+      "criterion_one_site_times_N_safe": true,
+      "full_addition_weight": 6.000000000000004,
+      "shortcut_addition_weight": 6.0000000000000036,
+      "full_removal_weight": 6.000000000000006,
+      "shortcut_removal_weight": 6.000000000000007,
+      "shortcut_max_deviation_from_exact_pair": 8.881784197001252e-16
+    },
+    {
+      "N": 8,
+      "U": 0.0,
+      "ground_energy": -9.65685424949239,
+      "ground_degeneracy_in_computed_window": 4,
+      "safety_criterion": "positive free-fermion closed-shell gap",
+      "single_particle_closed_shell_gap": 4.898587196589413e-16,
+      "criterion_one_site_times_N_safe": false,
+      "full_addition_weight": 8.000000000000007,
+      "shortcut_addition_weight": 6.0000000000000036,
+      "full_removal_weight": 8.000000000000005,
+      "shortcut_removal_weight": 10.000000000000007,
+      "shortcut_max_deviation_from_exact_pair": 2.0000000000000036
+    },
+    {
+      "N": 8,
+      "U": 4.0,
+      "ground_energy": -4.603526299989212,
+      "ground_degeneracy_in_computed_window": 1,
+      "safety_criterion": "unique interacting ground state with translation symmetry",
+      "single_particle_closed_shell_gap": "not applicable",
+      "criterion_one_site_times_N_safe": true,
+      "full_addition_weight": 8.000000000000021,
+      "shortcut_addition_weight": 8.000000000000021,
+      "full_removal_weight": 8.000000000000021,
+      "shortcut_removal_weight": 8.000000000000021,
+      "shortcut_max_deviation_from_exact_pair": 0.0
+    }
+  ],
+  "krylov_convergence": {
+    "ritz_table": [
+      {
+        "L": 1,
+        "lowest_ritz": 7.925246143997803,
+        "error_from_E0": 12.528772443987014
+      },
+      {
+        "L": 2,
+        "lowest_ritz": 3.7247266854619383,
+        "error_from_E0": 8.328252985451151
+      },
+      {
+        "L": 3,
+        "lowest_ritz": 0.9724052339789683,
+        "error_from_E0": 5.57593153396818
+      },
+      {
+        "L": 4,
+        "lowest_ritz": -0.9007879741646584,
+        "error_from_E0": 3.702738325824553
+      },
+      {
+        "L": 5,
+        "lowest_ritz": -2.1424667095991494,
+        "error_from_E0": 2.4610595903900623
+      },
+      {
+        "L": 6,
+        "lowest_ritz": -2.8178751584667023,
+        "error_from_E0": 1.7856511415225094
+      },
+      {
+        "L": 7,
+        "lowest_ritz": -3.196428031286835,
+        "error_from_E0": 1.4070982687023768
+      },
+      {
+        "L": 8,
+        "lowest_ritz": -3.4096982317573596,
+        "error_from_E0": 1.193828068231852
+      },
+      {
+        "L": 9,
+        "lowest_ritz": -3.5230699540881667,
+        "error_from_E0": 1.080456345901045
+      },
+      {
+        "L": 10,
+        "lowest_ritz": -3.5907704710450985,
+        "error_from_E0": 1.0127558289441132
+      },
+      {
+        "L": 11,
+        "lowest_ritz": -3.6372781846014592,
+        "error_from_E0": 0.9662481153877525
+      },
+      {
+        "L": 12,
+        "lowest_ritz": -3.6738887929134587,
+        "error_from_E0": 0.929637507075753
+      },
+      {
+        "L": 13,
+        "lowest_ritz": -3.7094156113220182,
+        "error_from_E0": 0.8941106886671935
+      },
+      {
+        "L": 14,
+        "lowest_ritz": -3.757385148242649,
+        "error_from_E0": 0.8461411517465627
+      },
+      {
+        "L": 15,
+        "lowest_ritz": -3.837060464763756,
+        "error_from_E0": 0.7664658352254556
+      },
+      {
+        "L": 16,
+        "lowest_ritz": -3.9463424355871117,
+        "error_from_E0": 0.6571838644021
+      },
+      {
+        "L": 17,
+        "lowest_ritz": -4.062358498479338,
+        "error_from_E0": 0.5411678015098733
+      },
+      {
+        "L": 18,
+        "lowest_ritz": -4.162480274264906,
+        "error_from_E0": 0.4410460257243054
+      },
+      {
+        "L": 19,
+        "lowest_ritz": -4.235711227672835,
+        "error_from_E0": 0.3678150723163771
+      },
+      {
+        "L": 20,
+        "lowest_ritz": -4.283779189285759,
+        "error_from_E0": 0.3197471107034531
+      },
+      {
+        "L": 21,
+        "lowest_ritz": -4.314519131397458,
+        "error_from_E0": 0.2890071685917537
+      },
+      {
+        "L": 22,
+        "lowest_ritz": -4.3356882219831805,
+        "error_from_E0": 0.2678380780060312
+      },
+      {
+        "L": 23,
+        "lowest_ritz": -4.351453681816973,
+        "error_from_E0": 0.2520726181722388
+      },
+      {
+        "L": 24,
+        "lowest_ritz": -4.366057389332595,
+        "error_from_E0": 0.23746891065661657
+      },
+      {
+        "L": 25,
+        "lowest_ritz": -4.386347475245096,
+        "error_from_E0": 0.21717882474411532
+      },
+      {
+        "L": 26,
+        "lowest_ritz": -4.424400052575828,
+        "error_from_E0": 0.17912624741338412
+      },
+      {
+        "L": 27,
+        "lowest_ritz": -4.477259957854559,
+        "error_from_E0": 0.12626634213465238
+      },
+      {
+        "L": 28,
+        "lowest_ritz": -4.525606358835688,
+        "error_from_E0": 0.07791994115352363
+      },
+      {
+        "L": 29,
+        "lowest_ritz": -4.5569464252236545,
+        "error_from_E0": 0.04657987476555725
+      },
+      {
+        "L": 30,
+        "lowest_ritz": -4.575661599684772,
+        "error_from_E0": 0.027864700304439438
+      },
+      {
+        "L": 31,
+        "lowest_ritz": -4.586436106115824,
+        "error_from_E0": 0.01709019387338806
+      },
+      {
+        "L": 32,
+        "lowest_ritz": -4.59322887818804,
+        "error_from_E0": 0.010297421801171325
+      },
+      {
+        "L": 33,
+        "lowest_ritz": -4.597418665186968,
+        "error_from_E0": 0.006107634802243744
+      },
+      {
+        "L": 34,
+        "lowest_ritz": -4.599840745294208,
+        "error_from_E0": 0.0036855546950036455
+      },
+      {
+        "L": 35,
+        "lowest_ritz": -4.601287640479688,
+        "error_from_E0": 0.0022386595095236217
+      },
+      {
+        "L": 36,
+        "lowest_ritz": -4.602200382746173,
+        "error_from_E0": 0.0013259172430384325
+      },
+      {
+        "L": 37,
+        "lowest_ritz": -4.602770882524412,
+        "error_from_E0": 0.0007554174647994572
+      },
+      {
+        "L": 38,
+        "lowest_ritz": -4.6031087288329235,
+        "error_from_E0": 0.00041757115628815455
+      },
+      {
+        "L": 39,
+        "lowest_ritz": -4.603308413944207,
+        "error_from_E0": 0.00021788604500461162
+      },
+      {
+        "L": 40,
+        "lowest_ritz": -4.603424807742937,
+        "error_from_E0": 0.00010149224627475917
+      },
+      {
+        "L": 41,
+        "lowest_ritz": -4.603484993687555,
+        "error_from_E0": 4.130630165644078e-05
+      },
+      {
+        "L": 42,
+        "lowest_ritz": -4.603511740142434,
+        "error_from_E0": 1.4559846778006147e-05
+      },
+      {
+        "L": 43,
+        "lowest_ritz": -4.603520918989249,
+        "error_from_E0": 5.3809999629450544e-06
+      },
+      {
+        "L": 44,
+        "lowest_ritz": -4.603524099384627,
+        "error_from_E0": 2.200604584778887e-06
+      },
+      {
+        "L": 45,
+        "lowest_ritz": -4.603525374148324,
+        "error_from_E0": 9.258408875112423e-07
+      },
+      {
+        "L": 46,
+        "lowest_ritz": -4.603525908525646,
+        "error_from_E0": 3.914635655632992e-07
+      },
+      {
+        "L": 47,
+        "lowest_ritz": -4.603526138440664,
+        "error_from_E0": 1.6154854787231443e-07
+      },
+      {
+        "L": 48,
+        "lowest_ritz": -4.603526236330228,
+        "error_from_E0": 6.365898386206936e-08
+      },
+      {
+        "L": 49,
+        "lowest_ritz": -4.6035262765343035,
+        "error_from_E0": 2.3454908237852123e-08
+      },
+      {
+        "L": 50,
+        "lowest_ritz": -4.6035262917043775,
+        "error_from_E0": 8.28483415205028e-09
+      },
+      {
+        "L": 51,
+        "lowest_ritz": -4.603526297182709,
+        "error_from_E0": 2.8065025858836634e-09
+      },
+      {
+        "L": 52,
+        "lowest_ritz": -4.603526298995584,
+        "error_from_E0": 9.936274025790226e-10
+      },
+      {
+        "L": 53,
+        "lowest_ritz": -4.603526299634868,
+        "error_from_E0": 3.5434410960988316e-10
+      },
+      {
+        "L": 54,
+        "lowest_ritz": -4.603526299861349,
+        "error_from_E0": 1.2786305347844973e-10
+      },
+      {
+        "L": 55,
+        "lowest_ritz": -4.603526299944289,
+        "error_from_E0": 4.4922288111592934e-11
+      },
+      {
+        "L": 56,
+        "lowest_ritz": -4.603526299971861,
+        "error_from_E0": 1.7350565428841946e-11
+      },
+      {
+        "L": 57,
+        "lowest_ritz": -4.603526299982113,
+        "error_from_E0": 7.098321930243401e-12
+      },
+      {
+        "L": 58,
+        "lowest_ritz": -4.603526299986176,
+        "error_from_E0": 3.035793838535028e-12
+      },
+      {
+        "L": 59,
+        "lowest_ritz": -4.6035262999879745,
+        "error_from_E0": 1.2372325386422744e-12
+      },
+      {
+        "L": 60,
+        "lowest_ritz": -4.6035262999887285,
+        "error_from_E0": 4.831690603168681e-13
+      }
+    ],
+    "spectral_reference_steps": 480,
+    "spectral_reference_reorthogonalization_passes": 2,
+    "spectral_shape_table": [
+      {
+        "L": 10,
+        "relative_max_difference_from_reference": 0.3767084412625931
+      },
+      {
+        "L": 20,
+        "relative_max_difference_from_reference": 0.18282149386061
+      },
+      {
+        "L": 40,
+        "relative_max_difference_from_reference": 0.02766724790404911
+      },
+      {
+        "L": 60,
+        "relative_max_difference_from_reference": 0.010058566115888722
+      }
+    ]
+  },
+  "validation_checklist": [
+    {
+      "check": "block_dimension",
+      "target_error": "missing or duplicated fixed-particle-number basis states",
+      "expectation": "enumerated dimension equals combinatorial value 4900",
+      "measured": 4900,
+      "conclusion": "PASS",
+      "failure_mode": "the two dimensions differ"
+    },
+    {
+      "check": "matrix_free_vs_independent_sparse",
+      "target_error": "hopping sign, target index, boundary bond, or interaction-action error",
+      "expectation": "relative action error < 1e-12",
+      "measured": 1.2492788916282321e-16,
+      "conclusion": "PASS",
+      "failure_mode": "a random complex probe produces different output vectors"
+    },
+    {
+      "check": "hermiticity",
+      "target_error": "missing reverse hop or asymmetric fermionic sign",
+      "expectation": "||H-H^dagger|| < 1e-12",
+      "measured": 0.0,
+      "conclusion": "PASS",
+      "failure_mode": "the antisymmetric matrix norm becomes nonzero"
+    },
+    {
+      "check": "interaction_trace",
+      "target_error": "missing or incorrectly weighted U term",
+      "expectation": "Tr(H) = 39200.0",
+      "measured": 39200.0,
+      "conclusion": "PASS",
+      "failure_mode": "the diagonal trace no longer matches the combinatorial count"
+    },
+    {
+      "check": "ground_state_residual",
+      "target_error": "unconverged eigensolver or mismatch between Hamiltonian representations",
+      "expectation": "relative residual < 1e-9",
+      "measured": 1.5442687567723403e-14,
+      "conclusion": "PASS",
+      "failure_mode": "||H psi-E psi|| remains appreciable"
+    },
+    {
+      "check": "ground_energy_cross_representation",
+      "target_error": "matrix-free Hamiltonian differs from explicit sparse Hamiltonian",
+      "expectation": "absolute energy difference < 1e-9",
+      "measured": 2.1316282072803006e-14,
+      "conclusion": "PASS",
+      "failure_mode": "the independently solved ground energies disagree"
+    },
+    {
+      "check": "mutation_flipped_hopping_sign_action_difference",
+      "target_error": "a deliberately corrupted Hamiltonian escaping validation",
+      "expectation": "the designated validation must report a nonzero discrepancy",
+      "measured": 0.668088204757953,
+      "conclusion": "PASS",
+      "failure_mode": "the mutation would be invisible if this value were near zero"
+    },
+    {
+      "check": "mutation_missing_boundary_action_difference",
+      "target_error": "a deliberately corrupted Hamiltonian escaping validation",
+      "expectation": "the designated validation must report a nonzero discrepancy",
+      "measured": 0.1175068150919158,
+      "conclusion": "PASS",
+      "failure_mode": "the mutation would be invisible if this value were near zero"
+    },
+    {
+      "check": "mutation_removed_interaction_trace_difference",
+      "target_error": "a deliberately corrupted Hamiltonian escaping validation",
+      "expectation": "the designated validation must report a nonzero discrepancy",
+      "measured": 39200.0,
+      "conclusion": "PASS",
+      "failure_mode": "the mutation would be invisible if this value were near zero"
+    },
+    {
+      "check": "lanczos_orthogonality",
+      "target_error": "Lanczos indexing, coefficient, normalization, or recurrence error",
+      "expectation": "residual < 1e-10",
+      "measured": 6.850198423608305e-16,
+      "conclusion": "PASS",
+      "failure_mode": "the Krylov basis or three-term recurrence fails its matrix identity"
+    },
+    {
+      "check": "lanczos_constructed_columns",
+      "target_error": "Lanczos indexing, coefficient, normalization, or recurrence error",
+      "expectation": "residual < 1e-10",
+      "measured": 7.890694079594044e-15,
+      "conclusion": "PASS",
+      "failure_mode": "the Krylov basis or three-term recurrence fails its matrix identity"
+    },
+    {
+      "check": "lanczos_full_recurrence",
+      "target_error": "Lanczos indexing, coefficient, normalization, or recurrence error",
+      "expectation": "residual < 1e-10",
+      "measured": 8.26159525684986e-15,
+      "conclusion": "PASS",
+      "failure_mode": "the Krylov basis or three-term recurrence fails its matrix identity"
+    },
+    {
+      "check": "continued_fraction_vs_direct_solve",
+      "target_error": "forward recursion, omitted deepest alpha, wrong beta indexing, or wrong start vector",
+      "expectation": "all longest-chain deviations < 1e-8",
+      "measured": 1.1326196659979928e-09,
+      "conclusion": "PASS",
+      "failure_mode": "the resolvent matrix elements disagree at one or more requested z values"
+    },
+    {
+      "check": "U=0_separate_addition_weight",
+      "target_error": "wrong creation operator, target spin block, or omitted alpha-squared factor",
+      "expectation": "w_add = N = 8",
+      "measured": 8.000000000000005,
+      "conclusion": "PASS",
+      "failure_mode": "the addition zeroth moment differs from the empty-state count"
+    },
+    {
+      "check": "U=0_separate_removal_weight",
+      "target_error": "wrong annihilation operator, target spin block, or omitted alpha-squared factor",
+      "expectation": "w_rem = N = 8",
+      "measured": 8.000000000000007,
+      "conclusion": "PASS",
+      "failure_mode": "the removal zeroth moment differs from the particle count"
+    },
+    {
+      "check": "U=0_particle_hole_add_rem_pointwise_symmetry",
+      "target_error": "wrong chemical-potential shift or inconsistent addition/removal frequency sign",
+      "expectation": "rho_add(xi) = rho_rem(-xi) pointwise on the symmetric grid",
+      "measured": 4.5209998928882717e-14,
+      "conclusion": "PASS",
+      "failure_mode": "addition and mirrored removal channels disagree at half filling"
+    },
+    {
+      "check": "U=2_separate_addition_weight",
+      "target_error": "wrong creation operator, target spin block, or omitted alpha-squared factor",
+      "expectation": "w_add = N = 8",
+      "measured": 7.999999999999994,
+      "conclusion": "PASS",
+      "failure_mode": "the addition zeroth moment differs from the empty-state count"
+    },
+    {
+      "check": "U=2_separate_removal_weight",
+      "target_error": "wrong annihilation operator, target spin block, or omitted alpha-squared factor",
+      "expectation": "w_rem = N = 8",
+      "measured": 7.999999999999995,
+      "conclusion": "PASS",
+      "failure_mode": "the removal zeroth moment differs from the particle count"
+    },
+    {
+      "check": "U=2_particle_hole_add_rem_pointwise_symmetry",
+      "target_error": "wrong chemical-potential shift or inconsistent addition/removal frequency sign",
+      "expectation": "rho_add(xi) = rho_rem(-xi) pointwise on the symmetric grid",
+      "measured": 5.792920913990891e-08,
+      "conclusion": "PASS",
+      "failure_mode": "addition and mirrored removal channels disagree at half filling"
+    },
+    {
+      "check": "U=4_separate_addition_weight",
+      "target_error": "wrong creation operator, target spin block, or omitted alpha-squared factor",
+      "expectation": "w_add = N = 8",
+      "measured": 8.000000000000021,
+      "conclusion": "PASS",
+      "failure_mode": "the addition zeroth moment differs from the empty-state count"
+    },
+    {
+      "check": "U=4_separate_removal_weight",
+      "target_error": "wrong annihilation operator, target spin block, or omitted alpha-squared factor",
+      "expectation": "w_rem = N = 8",
+      "measured": 8.000000000000021,
+      "conclusion": "PASS",
+      "failure_mode": "the removal zeroth moment differs from the particle count"
+    },
+    {
+      "check": "U=4_particle_hole_add_rem_pointwise_symmetry",
+      "target_error": "wrong chemical-potential shift or inconsistent addition/removal frequency sign",
+      "expectation": "rho_add(xi) = rho_rem(-xi) pointwise on the symmetric grid",
+      "measured": 3.382255696057721e-07,
+      "conclusion": "PASS",
+      "failure_mode": "addition and mirrored removal channels disagree at half filling"
+    },
+    {
+      "check": "U=6_separate_addition_weight",
+      "target_error": "wrong creation operator, target spin block, or omitted alpha-squared factor",
+      "expectation": "w_add = N = 8",
+      "measured": 7.999999999999984,
+      "conclusion": "PASS",
+      "failure_mode": "the addition zeroth moment differs from the empty-state count"
+    },
+    {
+      "check": "U=6_separate_removal_weight",
+      "target_error": "wrong annihilation operator, target spin block, or omitted alpha-squared factor",
+      "expectation": "w_rem = N = 8",
+      "measured": 7.999999999999984,
+      "conclusion": "PASS",
+      "failure_mode": "the removal zeroth moment differs from the particle count"
+    },
+    {
+      "check": "U=6_particle_hole_add_rem_pointwise_symmetry",
+      "target_error": "wrong chemical-potential shift or inconsistent addition/removal frequency sign",
+      "expectation": "rho_add(xi) = rho_rem(-xi) pointwise on the symmetric grid",
+      "measured": 3.180261753338403e-07,
+      "conclusion": "PASS",
+      "failure_mode": "addition and mirrored removal channels disagree at half filling"
+    },
+    {
+      "check": "U=8_separate_addition_weight",
+      "target_error": "wrong creation operator, target spin block, or omitted alpha-squared factor",
+      "expectation": "w_add = N = 8",
+      "measured": 7.999999999999996,
+      "conclusion": "PASS",
+      "failure_mode": "the addition zeroth moment differs from the empty-state count"
+    },
+    {
+      "check": "U=8_separate_removal_weight",
+      "target_error": "wrong annihilation operator, target spin block, or omitted alpha-squared factor",
+      "expectation": "w_rem = N = 8",
+      "measured": 7.999999999999995,
+      "conclusion": "PASS",
+      "failure_mode": "the removal zeroth moment differs from the particle count"
+    },
+    {
+      "check": "U=8_particle_hole_add_rem_pointwise_symmetry",
+      "target_error": "wrong chemical-potential shift or inconsistent addition/removal frequency sign",
+      "expectation": "rho_add(xi) = rho_rem(-xi) pointwise on the symmetric grid",
+      "measured": 1.5767031569918036e-12,
+      "conclusion": "PASS",
+      "failure_mode": "addition and mirrored removal channels disagree at half filling"
+    },
+    {
+      "check": "U=0_analytic_DOS",
+      "target_error": "hopping magnitude, periodic boundary, eta, continued-fraction order, or spectral normalization",
+      "expectation": "maximum error divided by analytic peak < 1e-8",
+      "measured": 8.66740036037343e-14,
+      "conclusion": "PASS",
+      "failure_mode": "the broadened free-particle peaks differ in location, width, or weight"
+    },
+    {
+      "check": "ritz_variational_monotonicity",
+      "target_error": "incorrect Krylov update or malformed leading tridiagonal blocks",
+      "expectation": "lowest Ritz values are nonincreasing with L",
+      "measured": 0.0,
+      "conclusion": "PASS",
+      "failure_mode": "a larger Krylov subspace raises the lowest Ritz estimate"
+    }
+  ]
+}
