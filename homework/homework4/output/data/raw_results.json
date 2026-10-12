@@ -1,0 +1,1010 @@
+{
+  "parameters": {
+    "N": 16,
+    "J1": 1.0,
+    "Delta": 1.0,
+    "J2": [
+      0.0,
+      0.5
+    ]
+  },
+  "dimensions": {
+    "Sz0": 12870,
+    "sum": 65536,
+    "full": 65536
+  },
+  "n16": {
+    "J2=0": {
+      "energy": -7.142296360616787,
+      "energy_per_site": -0.4463935225385492,
+      "u1_degeneracy": 1,
+      "ground_momenta": [
+        0
+      ],
+      "resolved_ground_momenta": [
+        0
+      ],
+      "lowest_excitation_energy": -6.872106678366469,
+      "lowest_excitation_gap": 0.2701896822503178,
+      "lowest_excitation_momenta": [
+        8
+      ],
+      "lowest_Sz0_excitation_gap": 0.2701896822503178,
+      "spin_gap": 0.2701896822503267,
+      "local_Sz_max_abs": 1.4744532385809167e-15,
+      "local_Sx_max_abs": 0.0,
+      "correlation_sum": -7.771561172376096e-16,
+      "structure_factor_peak_m": 8,
+      "critical_fields": [
+        {
+          "M_left": 0.0,
+          "M_right": 1.0,
+          "critical_field": 0.2701896822503205
+        },
+        {
+          "M_left": 1.0,
+          "M_right": 2.0,
+          "critical_field": 0.7497914106884087
+        },
+        {
+          "M_left": 2.0,
+          "M_right": 3.0,
+          "critical_field": 1.1477321720633906
+        },
+        {
+          "M_left": 3.0,
+          "M_right": 4.0,
+          "critical_field": 1.4624484093979513
+        },
+        {
+          "M_left": 4.0,
+          "M_right": 5.0,
+          "critical_field": 1.6971330624910455
+        },
+        {
+          "M_left": 5.0,
+          "M_right": 6.0,
+          "critical_field": 1.8587064222580525
+        },
+        {
+          "M_left": 6.0,
+          "M_right": 7.0,
+          "critical_field": 1.9562952014676132
+        },
+        {
+          "M_left": 7.0,
+          "M_right": 8.0,
+          "critical_field": 1.9999999999999987
+        }
+      ],
+      "magnetization_hull": [
+        [
+          0.0,
+          -7.142296360616781
+        ],
+        [
+          1.0,
+          -6.87210667836646
+        ],
+        [
+          2.0,
+          -6.122315267678052
+        ],
+        [
+          3.0,
+          -4.974583095614661
+        ],
+        [
+          4.0,
+          -3.5121346862167098
+        ],
+        [
+          5.0,
+          -1.8150016237256643
+        ],
+        [
+          6.0,
+          0.043704798532388206
+        ],
+        [
+          7.0,
+          2.0000000000000013
+        ],
+        [
+          8.0,
+          4.0
+        ]
+      ]
+    },
+    "J2=0.5": {
+      "energy": -6.0000000000000195,
+      "energy_per_site": -0.3750000000000012,
+      "u1_degeneracy": 2,
+      "ground_momenta": [
+        0,
+        8
+      ],
+      "resolved_ground_momenta": [
+        0,
+        8
+      ],
+      "lowest_excitation_energy": -5.7142828589296055,
+      "lowest_excitation_gap": 0.285717141070414,
+      "lowest_excitation_momenta": [
+        8
+      ],
+      "lowest_Sz0_excitation_gap": 0.2857171410704087,
+      "spin_gap": 0.2857171410704291,
+      "local_Sz_max_abs": 3.4580628291425168e-15,
+      "local_Sx_max_abs": 0.0,
+      "correlation_sum": 2.220446049250313e-16,
+      "structure_factor_peak_m": 8,
+      "critical_fields": [
+        {
+          "M_left": 0.0,
+          "M_right": 1.0,
+          "critical_field": 0.2857171410704167
+        },
+        {
+          "M_left": 1.0,
+          "M_right": 2.0,
+          "critical_field": 0.5873175314997638
+        },
+        {
+          "M_left": 2.0,
+          "M_right": 3.0,
+          "critical_field": 1.0646239521147374
+        },
+        {
+          "M_left": 3.0,
+          "M_right": 4.0,
+          "critical_field": 1.6701454237007232
+        },
+        {
+          "M_left": 4.0,
+          "M_right": 5.0,
+          "critical_field": 1.9262298292624127
+        },
+        {
+          "M_left": 5.0,
+          "M_right": 6.0,
+          "critical_field": 2.042732243704039
+        },
+        {
+          "M_left": 6.0,
+          "M_right": 7.0,
+          "critical_field": 2.186997055689549
+        },
+        {
+          "M_left": 7.0,
+          "M_right": 8.0,
+          "critical_field": 2.2362368229583653
+        }
+      ],
+      "magnetization_hull": [
+        [
+          0.0,
+          -6.000000000000007
+        ],
+        [
+          1.0,
+          -5.71428285892959
+        ],
+        [
+          2.0,
+          -5.126965327429827
+        ],
+        [
+          3.0,
+          -4.062341375315089
+        ],
+        [
+          4.0,
+          -2.392195951614366
+        ],
+        [
+          5.0,
+          -0.4659661223519532
+        ],
+        [
+          6.0,
+          1.576766121352086
+        ],
+        [
+          7.0,
+          3.7637631770416347
+        ],
+        [
+          8.0,
+          6.0
+        ]
+      ]
+    }
+  },
+  "n8_full_spectrum": {
+    "J2=0": {
+      "levels": 70,
+      "union_error": 5.773159728050814e-15
+    },
+    "J2=0.5": {
+      "levels": 70,
+      "union_error": 5.551115123125783e-15
+    }
+  },
+  "majumdar_ghosh": [
+    {
+      "N": 8,
+      "target_energy": -3.0,
+      "ED_ground_energy": -2.999999999999999,
+      "ED_error": 8.881784197001252e-16,
+      "D0_residual": 0.0,
+      "D1_residual": 0.0,
+      "D0_translation_to_D1": 0.0,
+      "D0_is_T_eigen_residual": 1.322875655532295,
+      "k0_residual": 0.0,
+      "kpi_residual": 0.0,
+      "D0_D1_overlap": 0.12499999999999992
+    },
+    {
+      "N": 10,
+      "target_energy": -3.75,
+      "ED_ground_energy": -3.7500000000000027,
+      "ED_error": 2.6645352591003757e-15,
+      "D0_residual": 2.7194799110210365e-16,
+      "D1_residual": 2.7194799110210365e-16,
+      "D0_translation_to_D1": 0.0,
+      "D0_is_T_eigen_residual": 1.4577379737113247,
+      "k0_residual": 0.0,
+      "kpi_residual": 0.0,
+      "D0_D1_overlap": -0.06249999999999995
+    },
+    {
+      "N": 12,
+      "target_energy": -4.5,
+      "ED_ground_energy": -4.500000000000005,
+      "ED_error": 5.329070518200751e-15,
+      "D0_residual": 5.20740757162067e-16,
+      "D1_residual": 5.20740757162067e-16,
+      "D0_translation_to_D1": 0.0,
+      "D0_is_T_eigen_residual": 1.3919410907075054,
+      "k0_residual": 0.0,
+      "kpi_residual": 0.0,
+      "D0_D1_overlap": 0.031249999999999972
+    }
+  ],
+  "xx_free_fermion": [
+    {
+      "N": 8,
+      "numerical": -2.6131259297527505,
+      "analytic": -2.6131259297527536,
+      "error": 3.1086244689504383e-15,
+      "chosen_boundary": "antiperiodic",
+      "periodic_energy": -2.414213562373095,
+      "antiperiodic_energy": -2.6131259297527536
+    },
+    {
+      "N": 10,
+      "numerical": -3.23606797749979,
+      "analytic": -3.23606797749979,
+      "error": 0.0,
+      "chosen_boundary": "periodic",
+      "periodic_energy": -3.23606797749979,
+      "antiperiodic_energy": -3.0776835371752536
+    },
+    {
+      "N": 12,
+      "numerical": -3.8637033051562772,
+      "analytic": -3.8637033051562732,
+      "error": 3.9968028886505635e-15,
+      "chosen_boundary": "antiperiodic",
+      "periodic_energy": -3.7320508075688776,
+      "antiperiodic_energy": -3.8637033051562732
+    }
+  ],
+  "anisotropy": {
+    "Delta=0.5 max_abs_Cdot_minus_3Czz": 0.10671110511728012,
+    "interpretation": "nonzero as expected when SU(2) is broken"
+  },
+  "j2_scan": [
+    {
+      "j2": 0.0,
+      "energy": -7.142296360616787,
+      "energy_per_site": -0.4463935225385492,
+      "ground_momenta": "0"
+    },
+    {
+      "j2": 0.1,
+      "energy": -6.852168029273572,
+      "energy_per_site": -0.42826050182959824,
+      "ground_momenta": "0"
+    },
+    {
+      "j2": 0.2,
+      "energy": -6.577120323988378,
+      "energy_per_site": -0.41107002024927364,
+      "ground_momenta": "0"
+    },
+    {
+      "j2": 0.30000000000000004,
+      "energy": -6.323774269876456,
+      "energy_per_site": -0.3952358918672785,
+      "ground_momenta": "0"
+    },
+    {
+      "j2": 0.4,
+      "energy": -6.109380564911351,
+      "energy_per_site": -0.38183628530695946,
+      "ground_momenta": "0"
+    },
+    {
+      "j2": 0.5,
+      "energy": -6.000000000000003,
+      "energy_per_site": -0.37500000000000017,
+      "ground_momenta": "0;8"
+    },
+    {
+      "j2": 0.6000000000000001,
+      "energy": -6.0975240269623345,
+      "energy_per_site": -0.3810952516851459,
+      "ground_momenta": "0"
+    },
+    {
+      "j2": 0.7000000000000001,
+      "energy": -6.373120567164225,
+      "energy_per_site": -0.39832003544776406,
+      "ground_momenta": "8"
+    },
+    {
+      "j2": 0.8,
+      "energy": -6.788794252836993,
+      "energy_per_site": -0.4242996408023121,
+      "ground_momenta": "8"
+    },
+    {
+      "j2": 0.9,
+      "energy": -7.25983449899988,
+      "energy_per_site": -0.4537396561874925,
+      "ground_momenta": "8"
+    },
+    {
+      "j2": 1.0,
+      "energy": -7.766621405432099,
+      "energy_per_site": -0.4854138378395062,
+      "ground_momenta": "0"
+    }
+  ],
+  "validations": [
+    {
+      "check": "N=16 sector dimensions sum",
+      "targeted_error": "固定 popcount 基枚举发生漏态、重复态或磁量子数到 n_up 的换算错误",
+      "failure_signature": "各扇区维数之和不再等于 2^16=65536，且零磁化扇区可能偏离 C(16,8)=12870",
+      "target": 65536,
+      "measured": 65536,
+      "absolute_error": 0,
+      "tolerance": 0.0,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "N=2 singlet energy",
+      "targeted_error": "N=2 周期最近邻键被重复计数，或交换项的符号与 1/2 系数错误",
+      "failure_signature": "单态能量偏离 -3/4；典型双计数会给出 -3/2",
+      "target": -0.75,
+      "measured": -0.75,
+      "absolute_error": 0.0,
+      "tolerance": 1e-13,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "N=2 triplet m=0 energy",
+      "targeted_error": "N=2 对角 SzSz 项或横向翻转项的相对系数错误",
+      "failure_signature": "m=0 三重态能量偏离 +1/4，或与其余三重态不再简并",
+      "target": 0.25,
+      "measured": 0.25,
+      "absolute_error": 0.0,
+      "tolerance": 1e-13,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "N=4 Heisenberg ground",
+      "targeted_error": "周期键列表、XY 翻转矩阵元或 SzSz 对角项构造错误",
+      "failure_signature": "精确基态能量不再等于 -2J1",
+      "target": -2.0,
+      "measured": -1.9999999999999998,
+      "absolute_error": 2.220446049250313e-16,
+      "tolerance": 1e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "spin translation entries are +1",
+      "targeted_error": "把费米 Fock 基的交换负号错误地带入自旋张量积基平移",
+      "failure_signature": "平移置换矩阵会出现 -1 或非实相位，而不是所有非零元均为 +1",
+      "target": 0.0,
+      "measured": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 0.0,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "T^N=I (bit permutation)",
+      "targeted_error": "位旋转方向、周期掩码或跨边界映射错误",
+      "failure_signature": "某个位串平移 N 次后不能回到自身，T^N-I 出现非零元",
+      "target": 0.0,
+      "measured": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 0.0,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "Hermiticity J2=0",
+      "targeted_error": "翻转跃迁只写入一个方向，或共轭相位/矩阵索引处理错误",
+      "failure_signature": "H-H^dagger 的最大矩阵元显著非零，本征值还可能出现虚部",
+      "target": 0.0,
+      "measured": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-13,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "[H,T]=0 J2=0",
+      "targeted_error": "周期边界、J2 键或平移约定与 Hamiltonian 的格点编号不一致",
+      "failure_signature": "交换子 HT-TH 出现非零矩阵元，等价平移态得到不同能量",
+      "target": 0.0,
+      "measured": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-13,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "P_k orthonormality J2=0",
+      "targeted_error": "轨道重复、短轨道允许条件错误或遗漏 1/sqrt(ell) 归一化",
+      "failure_signature": "Gram 矩阵 P_k^dagger P_k-I 非零；漏归一化时对角元按轨道长度放大",
+      "target": 0.0,
+      "measured": 2.220446049250313e-16,
+      "absolute_error": 2.220446049250313e-16,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "T P_k=e^(ik) P_k J2=0",
+      "targeted_error": "动量指数正负号、T 的方向或轨道内排序错误",
+      "failure_signature": "TP_k-e^(ik)P_k 非零，常见表现是把 m 错标为 N-m",
+      "target": 0.0,
+      "measured": 2.6368162037260693e-15,
+      "absolute_error": 2.6368162037260693e-15,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "sum momentum dimensions J2=0",
+      "targeted_error": "短轨道的动量选择规则导致态被遗漏或在多个块中重复计数",
+      "failure_signature": "全部动量块维数之和不等于固定 Sztot 扇区维数 12870",
+      "target": 12870.0,
+      "measured": 12870.0,
+      "absolute_error": 0.0,
+      "tolerance": 0.0,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "U(1) vs block ground J2=0",
+      "targeted_error": "投影矩阵或 H_k=P_k^dagger H P_k 的装配错误",
+      "failure_signature": "所有动量块的最低值与未分动量 U(1) 基态能量不一致",
+      "target": -7.142296360616787,
+      "measured": -7.142296360616799,
+      "absolute_error": 1.1546319456101628e-14,
+      "tolerance": 2e-10,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "ground-subspace resolution J2=0",
+      "targeted_error": "简并基态子空间截取不全，或子空间内平移算符对角化错误",
+      "failure_signature": "解析后的确定动量态能量偏离原 U(1) 基态，或漏掉简并动量",
+      "target": -7.142296360616787,
+      "measured": -7.142296360616789,
+      "absolute_error": 1.7763568394002505e-15,
+      "tolerance": 2e-10,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "sum local Sz J2=0",
+      "targeted_error": "bit 的上下自旋约定或局域 Sz 期望值公式错误",
+      "failure_signature": "逐点局域磁矩之和不等于所选扇区的 Sztot=0",
+      "target": 0.0,
+      "measured": 1.7491774543178272e-16,
+      "absolute_error": 1.7491774543178272e-16,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "max local Sx J2=0",
+      "targeted_error": "错误地在固定 Sztot 基内闭合单自旋翻转，或态重构混入其他扇区",
+      "failure_signature": "固定 Sztot 本征态出现显著非零的局域 <Sx_i>",
+      "target": 0.0,
+      "measured": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "singlet correlation sum rule J2=0",
+      "targeted_error": "SxSx+SySy 关联系数、基态选择或总自旋单态性质处理错误",
+      "failure_signature": "总和 sum_r <S0 dot Sr> 显著偏离 0",
+      "target": 0.0,
+      "measured": -7.771561172376096e-16,
+      "absolute_error": 7.771561172376096e-16,
+      "tolerance": 5e-10,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "normalized structure-factor sum rule J2=0",
+      "targeted_error": "结构因子遗漏 1/N、FFT 归一化或 q 网格索引错误",
+      "failure_signature": "sum_q S(q) 不等于 C(0)=3/4；遗漏 1/N 时 N=16 会得到 12",
+      "target": 0.75,
+      "measured": 0.75,
+      "absolute_error": 0.0,
+      "tolerance": 5e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "SU(2) Cdot=3Czz J2=0",
+      "targeted_error": "自旋点积关联的横向系数错误，或 Delta=1 Hamiltonian 未保持 SU(2)",
+      "failure_signature": "逐点 C(r)-3Czz(r) 在数值误差以上非零",
+      "target": 0.0,
+      "measured": 1.9040324872321435e-14,
+      "absolute_error": 1.9040324872321435e-14,
+      "tolerance": 5e-10,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "spin inversion E(M)=E(-M) J2=0",
+      "targeted_error": "上下自旋编码、扇区 Hamiltonian 或 Zeeman 符号不对称",
+      "failure_signature": "互为自旋翻转的 M 与 -M 扇区最低能量不同",
+      "target": 0.0,
+      "measured": 6.217248937900877e-15,
+      "absolute_error": 6.217248937900877e-15,
+      "tolerance": 2e-10,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "Hermiticity J2=0.5",
+      "targeted_error": "翻转跃迁只写入一个方向，或共轭相位/矩阵索引处理错误",
+      "failure_signature": "H-H^dagger 的最大矩阵元显著非零，本征值还可能出现虚部",
+      "target": 0.0,
+      "measured": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-13,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "[H,T]=0 J2=0.5",
+      "targeted_error": "周期边界、J2 键或平移约定与 Hamiltonian 的格点编号不一致",
+      "failure_signature": "交换子 HT-TH 出现非零矩阵元，等价平移态得到不同能量",
+      "target": 0.0,
+      "measured": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-13,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "P_k orthonormality J2=0.5",
+      "targeted_error": "轨道重复、短轨道允许条件错误或遗漏 1/sqrt(ell) 归一化",
+      "failure_signature": "Gram 矩阵 P_k^dagger P_k-I 非零；漏归一化时对角元按轨道长度放大",
+      "target": 0.0,
+      "measured": 2.220446049250313e-16,
+      "absolute_error": 2.220446049250313e-16,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "T P_k=e^(ik) P_k J2=0.5",
+      "targeted_error": "动量指数正负号、T 的方向或轨道内排序错误",
+      "failure_signature": "TP_k-e^(ik)P_k 非零，常见表现是把 m 错标为 N-m",
+      "target": 0.0,
+      "measured": 2.6368162037260693e-15,
+      "absolute_error": 2.6368162037260693e-15,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "sum momentum dimensions J2=0.5",
+      "targeted_error": "短轨道的动量选择规则导致态被遗漏或在多个块中重复计数",
+      "failure_signature": "全部动量块维数之和不等于固定 Sztot 扇区维数 12870",
+      "target": 12870.0,
+      "measured": 12870.0,
+      "absolute_error": 0.0,
+      "tolerance": 0.0,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "U(1) vs block ground J2=0.5",
+      "targeted_error": "投影矩阵或 H_k=P_k^dagger H P_k 的装配错误",
+      "failure_signature": "所有动量块的最低值与未分动量 U(1) 基态能量不一致",
+      "target": -6.0000000000000195,
+      "measured": -6.000000000000051,
+      "absolute_error": 3.108624468950438e-14,
+      "tolerance": 2e-10,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "ground-subspace resolution J2=0.5",
+      "targeted_error": "简并基态子空间截取不全，或子空间内平移算符对角化错误",
+      "failure_signature": "解析后的确定动量态能量偏离原 U(1) 基态，或漏掉简并动量",
+      "target": -6.0000000000000195,
+      "measured": -6.000000000000008,
+      "absolute_error": 1.1546319456101628e-14,
+      "tolerance": 2e-10,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "sum local Sz J2=0.5",
+      "targeted_error": "bit 的上下自旋约定或局域 Sz 期望值公式错误",
+      "failure_signature": "逐点局域磁矩之和不等于所选扇区的 Sztot=0",
+      "target": 0.0,
+      "measured": 1.5742615544490116e-16,
+      "absolute_error": 1.5742615544490116e-16,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "max local Sx J2=0.5",
+      "targeted_error": "错误地在固定 Sztot 基内闭合单自旋翻转，或态重构混入其他扇区",
+      "failure_signature": "固定 Sztot 本征态出现显著非零的局域 <Sx_i>",
+      "target": 0.0,
+      "measured": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "singlet correlation sum rule J2=0.5",
+      "targeted_error": "SxSx+SySy 关联系数、基态选择或总自旋单态性质处理错误",
+      "failure_signature": "总和 sum_r <S0 dot Sr> 显著偏离 0",
+      "target": 0.0,
+      "measured": 2.220446049250313e-16,
+      "absolute_error": 2.220446049250313e-16,
+      "tolerance": 5e-10,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "normalized structure-factor sum rule J2=0.5",
+      "targeted_error": "结构因子遗漏 1/N、FFT 归一化或 q 网格索引错误",
+      "failure_signature": "sum_q S(q) 不等于 C(0)=3/4；遗漏 1/N 时 N=16 会得到 12",
+      "target": 0.75,
+      "measured": 0.75,
+      "absolute_error": 0.0,
+      "tolerance": 5e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "SU(2) Cdot=3Czz J2=0.5",
+      "targeted_error": "自旋点积关联的横向系数错误，或 Delta=1 Hamiltonian 未保持 SU(2)",
+      "failure_signature": "逐点 C(r)-3Czz(r) 在数值误差以上非零",
+      "target": 0.0,
+      "measured": 9.992007221626409e-16,
+      "absolute_error": 9.992007221626409e-16,
+      "tolerance": 5e-10,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "spin inversion E(M)=E(-M) J2=0.5",
+      "targeted_error": "上下自旋编码、扇区 Hamiltonian 或 Zeeman 符号不对称",
+      "failure_signature": "互为自旋翻转的 M 与 -M 扇区最低能量不同",
+      "target": 0.0,
+      "measured": 8.881784197001252e-15,
+      "absolute_error": 8.881784197001252e-15,
+      "tolerance": 2e-10,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "N=8 block-spectrum union J2=0",
+      "targeted_error": "动量轨道遗漏/重复、块 Hamiltonian 错误或某些块本征值未完整求出",
+      "failure_signature": "拼接后的 70 个块谱不能逐点匹配直接 U(1) 全谱",
+      "target": 0.0,
+      "measured": 5.773159728050814e-15,
+      "absolute_error": 5.773159728050814e-15,
+      "tolerance": 2e-11,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "N=8 block-spectrum union J2=0.5",
+      "targeted_error": "动量轨道遗漏/重复、块 Hamiltonian 错误或某些块本征值未完整求出",
+      "failure_signature": "拼接后的 70 个块谱不能逐点匹配直接 U(1) 全谱",
+      "target": 0.0,
+      "measured": 5.551115123125783e-15,
+      "absolute_error": 5.551115123125783e-15,
+      "tolerance": 2e-11,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "MG D0 residual N=8",
+      "targeted_error": "J2/J1=1/2 键系数、周期二聚体的单态符号或跨边界配对错误",
+      "failure_signature": "精确二聚体态的残差 norm[(H+3N/8)D] 不再接近机器精度",
+      "target": 0.0,
+      "measured": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "MG D1 residual N=8",
+      "targeted_error": "J2/J1=1/2 键系数、周期二聚体的单态符号或跨边界配对错误",
+      "failure_signature": "精确二聚体态的残差 norm[(H+3N/8)D] 不再接近机器精度",
+      "target": 0.0,
+      "measured": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "MG ED ground energy N=8",
+      "targeted_error": "Hamiltonian 或最低本征值求解器给出错误的 MG 点基态",
+      "failure_signature": "ED 最低能量偏离解析值 -3NJ1/8",
+      "target": -3.0,
+      "measured": -2.999999999999999,
+      "absolute_error": 8.881784197001252e-16,
+      "tolerance": 2e-11,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "MG k=0 combination N=8",
+      "targeted_error": "D0、D1 的相对号、归一化或平移方向错误",
+      "failure_signature": "对称组合不满足 T(D0+D1)=+(D0+D1)",
+      "target": 0.0,
+      "measured": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "MG k=pi combination N=8",
+      "targeted_error": "D0、D1 的相对号、归一化或平移方向错误",
+      "failure_signature": "反对称组合不满足 T(D0-D1)=-(D0-D1)",
+      "target": 0.0,
+      "measured": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "MG D0 residual N=10",
+      "targeted_error": "J2/J1=1/2 键系数、周期二聚体的单态符号或跨边界配对错误",
+      "failure_signature": "精确二聚体态的残差 norm[(H+3N/8)D] 不再接近机器精度",
+      "target": 0.0,
+      "measured": 2.7194799110210365e-16,
+      "absolute_error": 2.7194799110210365e-16,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "MG D1 residual N=10",
+      "targeted_error": "J2/J1=1/2 键系数、周期二聚体的单态符号或跨边界配对错误",
+      "failure_signature": "精确二聚体态的残差 norm[(H+3N/8)D] 不再接近机器精度",
+      "target": 0.0,
+      "measured": 2.7194799110210365e-16,
+      "absolute_error": 2.7194799110210365e-16,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "MG ED ground energy N=10",
+      "targeted_error": "Hamiltonian 或最低本征值求解器给出错误的 MG 点基态",
+      "failure_signature": "ED 最低能量偏离解析值 -3NJ1/8",
+      "target": -3.75,
+      "measured": -3.7500000000000027,
+      "absolute_error": 2.6645352591003757e-15,
+      "tolerance": 2e-11,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "MG k=0 combination N=10",
+      "targeted_error": "D0、D1 的相对号、归一化或平移方向错误",
+      "failure_signature": "对称组合不满足 T(D0+D1)=+(D0+D1)",
+      "target": 0.0,
+      "measured": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "MG k=pi combination N=10",
+      "targeted_error": "D0、D1 的相对号、归一化或平移方向错误",
+      "failure_signature": "反对称组合不满足 T(D0-D1)=-(D0-D1)",
+      "target": 0.0,
+      "measured": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "MG D0 residual N=12",
+      "targeted_error": "J2/J1=1/2 键系数、周期二聚体的单态符号或跨边界配对错误",
+      "failure_signature": "精确二聚体态的残差 norm[(H+3N/8)D] 不再接近机器精度",
+      "target": 0.0,
+      "measured": 5.20740757162067e-16,
+      "absolute_error": 5.20740757162067e-16,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "MG D1 residual N=12",
+      "targeted_error": "J2/J1=1/2 键系数、周期二聚体的单态符号或跨边界配对错误",
+      "failure_signature": "精确二聚体态的残差 norm[(H+3N/8)D] 不再接近机器精度",
+      "target": 0.0,
+      "measured": 5.20740757162067e-16,
+      "absolute_error": 5.20740757162067e-16,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "MG ED ground energy N=12",
+      "targeted_error": "Hamiltonian 或最低本征值求解器给出错误的 MG 点基态",
+      "failure_signature": "ED 最低能量偏离解析值 -3NJ1/8",
+      "target": -4.5,
+      "measured": -4.500000000000005,
+      "absolute_error": 5.329070518200751e-15,
+      "tolerance": 2e-11,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "MG k=0 combination N=12",
+      "targeted_error": "D0、D1 的相对号、归一化或平移方向错误",
+      "failure_signature": "对称组合不满足 T(D0+D1)=+(D0+D1)",
+      "target": 0.0,
+      "measured": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "MG k=pi combination N=12",
+      "targeted_error": "D0、D1 的相对号、归一化或平移方向错误",
+      "failure_signature": "反对称组合不满足 T(D0-D1)=-(D0-D1)",
+      "target": 0.0,
+      "measured": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 2e-12,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "XX free-fermion N=8",
+      "targeted_error": "XY 跃迁幅度、Jordan-Wigner 奇偶边界或半填充占据规则错误",
+      "failure_signature": "自旋 ED 基态能量与正确周期/反周期自由费米子填充能量不一致",
+      "target": 0.0,
+      "measured": 3.1086244689504383e-15,
+      "absolute_error": 3.1086244689504383e-15,
+      "tolerance": 2e-11,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "XX free-fermion N=10",
+      "targeted_error": "XY 跃迁幅度、Jordan-Wigner 奇偶边界或半填充占据规则错误",
+      "failure_signature": "自旋 ED 基态能量与正确周期/反周期自由费米子填充能量不一致",
+      "target": 0.0,
+      "measured": 0.0,
+      "absolute_error": 0.0,
+      "tolerance": 2e-11,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "XX free-fermion N=12",
+      "targeted_error": "XY 跃迁幅度、Jordan-Wigner 奇偶边界或半填充占据规则错误",
+      "failure_signature": "自旋 ED 基态能量与正确周期/反周期自由费米子填充能量不一致",
+      "target": 0.0,
+      "measured": 3.9968028886505635e-15,
+      "absolute_error": 3.9968028886505635e-15,
+      "tolerance": 2e-11,
+      "status": "PASS",
+      "fault_injection": false
+    },
+    {
+      "check": "Delta=0.5 breaks SU(2) relation (deliberate contrast)",
+      "targeted_error": "代码把 Delta 硬编码为 1，或各向异性 SzSz 项没有真正生效",
+      "failure_signature": "Delta=0.5 时 C(r)-3Czz(r) 仍错误地接近 0，未显示 SU(2) 破缺",
+      "target": 0.0,
+      "measured": 0.10671110511728012,
+      "absolute_error": 0.10671110511728012,
+      "tolerance": 1e-05,
+      "status": "PASS",
+      "fault_injection": true
+    },
+    {
+      "check": "FAULT: N=2 double-counted bond is detected",
+      "targeted_error": "校检是否能捕获 N=2 最近邻键重复计数",
+      "failure_signature": "注入后 E0 从 -0.75 变为 -1.5；若仍判为正确则说明基准无检错力",
+      "target": -0.75,
+      "measured": -1.5,
+      "absolute_error": 0.75,
+      "tolerance": 1e-06,
+      "status": "PASS",
+      "fault_injection": true
+    },
+    {
+      "check": "FAULT: unnormalized momentum projector is detected",
+      "targeted_error": "校检是否能捕获动量轨道漏掉 1/sqrt(ell) 归一化",
+      "failure_signature": "注入后 Gram 偏差变为 15；若 P^dagger P 检查不报警则校检失效",
+      "target": 0.0,
+      "measured": 15.0,
+      "absolute_error": 15.0,
+      "tolerance": 1e-06,
+      "status": "PASS",
+      "fault_injection": true
+    },
+    {
+      "check": "FAULT: omitted J2 bonds are detected at J2=0.5",
+      "targeted_error": "校检是否能捕获 J2=0.5 时次近邻键被遗漏",
+      "failure_signature": "注入后 E0 错成 -7.142296361 而非 -6；MG 能量基准应立即失败",
+      "target": -6.0000000000000195,
+      "measured": -7.142296360616787,
+      "absolute_error": 1.1422963606167675,
+      "tolerance": 1e-06,
+      "status": "PASS",
+      "fault_injection": true
+    },
+    {
+      "check": "FAULT: wrong Jordan-Wigner boundary is detected for N=8",
+      "targeted_error": "校检是否能捕获 XX 映射选错费米奇偶边界条件",
+      "failure_signature": "N=8 注入后能量偏差为 0.198912367；解析-ED 对照应失败",
+      "target": -2.6131259297527505,
+      "measured": -2.414213562373095,
+      "absolute_error": 0.19891236737965556,
+      "tolerance": 1e-06,
+      "status": "PASS",
+      "fault_injection": true
+    }
+  ],
+  "validation_summary": {
+    "passed": 57,
+    "failed": 0,
+    "total": 57
+  }
+}
