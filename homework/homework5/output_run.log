@@ -1,0 +1,136 @@
+ED N=4, J2=0.0, periodic=False
+ED N=6, J2=0.0, periodic=False
+ED N=8, J2=0.0, periodic=False
+ED N=10, J2=0.0, periodic=False
+ED N=4, J2=0.3, periodic=False
+ED N=6, J2=0.3, periodic=False
+ED N=8, J2=0.3, periodic=False
+ED N=10, J2=0.3, periodic=False
+ED N=4, J2=0.5, periodic=False
+ED N=6, J2=0.5, periodic=False
+ED N=8, J2=0.5, periodic=False
+ED N=10, J2=0.5, periodic=False
+ED N=4, J2=0.0, periodic=True
+ED N=6, J2=0.0, periodic=True
+ED N=8, J2=0.0, periodic=True
+ED N=12, J2=0.0, periodic=False
+ED N=12, J2=0.5, periodic=False
+ED N=14, J2=0.5, periodic=False
+ED N=16, J2=0.5, periodic=False
+N=20 J2=0.0 chi=2: warmup E=-8.167148994072
+  sweep 1: E=-8.325594969393, eps=2.229e-02
+  sweep 2: E=-8.330130913963, eps=1.984e-02
+  sweep 3: E=-8.330348478740, eps=1.969e-02
+  sweep 4: E=-8.330361358309, eps=1.968e-02
+  sweep 5: E=-8.330362133155, eps=1.968e-02
+  sweep 6: E=-8.330362179746, eps=1.968e-02
+  sweep 7: E=-8.330362182543, eps=1.968e-02
+  sweep 8: E=-8.330362182711, eps=1.968e-02
+ED N=14, J2=0.0, periodic=False
+ED N=16, J2=0.0, periodic=False
+ED N=18, J2=0.0, periodic=False
+ED N=20, J2=0.0, periodic=False
+N=20 J2=0.0 chi=4: warmup E=-8.654797665863
+  sweep 1: E=-8.654800216053, eps=1.191e-03
+  sweep 2: E=-8.654800162196, eps=1.191e-03
+  sweep 3: E=-8.654800162131, eps=1.191e-03
+N=20 J2=0.0 chi=8: warmup E=-8.682042350353
+  sweep 1: E=-8.682079857743, eps=1.892e-05
+  sweep 2: E=-8.682079662820, eps=1.894e-05
+  sweep 3: E=-8.682079662436, eps=1.894e-05
+N=20 J2=0.0 chi=16: warmup E=-8.682465436541
+  sweep 1: E=-8.682469588971, eps=5.752e-07
+  sweep 2: E=-8.682469587406, eps=5.753e-07
+  sweep 3: E=-8.682469587405, eps=5.753e-07
+N=20 J2=0.0 chi=32: warmup E=-8.682473274453
+  sweep 1: E=-8.682473320091, eps=9.914e-10
+  sweep 2: E=-8.682473320090, eps=9.914e-10
+N=20 J2=0.3 chi=32: warmup E=-7.796938526715
+  sweep 1: E=-7.796938543203, eps=1.492e-10
+  sweep 2: E=-7.796938543203, eps=1.492e-10
+ED N=12, J2=0.3, periodic=False
+ED N=14, J2=0.3, periodic=False
+ED N=16, J2=0.3, periodic=False
+ED N=18, J2=0.3, periodic=False
+ED N=20, J2=0.3, periodic=False
+N=40 J2=0.0 chi=32: warmup E=-17.541471105618
+  sweep 1: E=-17.541472114028, eps=3.249e-08
+  sweep 2: E=-17.541472113764, eps=3.250e-08
+N=40 J2=0.0 chi=64: warmup E=-17.541473284451
+  sweep 1: E=-17.541473298402, eps=4.037e-11
+  sweep 2: E=-17.541473298400, eps=4.040e-11
+N=60 J2=0.0 chi=32: warmup E=-26.403002700096
+  sweep 1: E=-26.403006576496, eps=1.333e-07
+  sweep 2: E=-26.403006572917, eps=1.334e-07
+  sweep 3: E=-26.403006572863, eps=1.334e-07
+N=60 J2=0.0 chi=64: warmup E=-26.403014976654
+  sweep 1: E=-26.403015114941, eps=4.912e-10
+  sweep 2: E=-26.403015114915, eps=4.916e-10
+Dimer scan ED N=12, J2=0.0
+Dimer scan ED N=16, J2=0.0
+Dimer scan ED N=20, J2=0.0
+N=20 J2=0.0 chi=64: warmup E=-8.682473334361
+  sweep 1: E=-8.682473334398, eps=6.772e-14
+  sweep 2: E=-8.682473334398, eps=6.772e-14
+Dimer scan ED N=12, J2=0.1
+Dimer scan ED N=16, J2=0.1
+Dimer scan ED N=20, J2=0.1
+N=20 J2=0.1 chi=64: warmup E=-8.362950950900
+  sweep 1: E=-8.362950950930, eps=3.419e-14
+  sweep 2: E=-8.362950950930, eps=3.419e-14
+Dimer scan ED N=12, J2=0.2
+Dimer scan ED N=16, J2=0.2
+Dimer scan ED N=20, J2=0.2
+N=20 J2=0.2 chi=64: warmup E=-8.064121443840
+  sweep 1: E=-8.064121443906, eps=5.462e-14
+  sweep 2: E=-8.064121443906, eps=5.651e-14
+Dimer scan ED N=12, J2=0.3
+Dimer scan ED N=16, J2=0.3
+Dimer scan ED N=20, J2=0.3
+N=20 J2=0.3 chi=64: warmup E=-7.796938545057
+  sweep 1: E=-7.796938545210, eps=1.286e-13
+  sweep 2: E=-7.796938545210, eps=1.317e-13
+Dimer scan ED N=12, J2=0.4
+Dimer scan ED N=16, J2=0.4
+Dimer scan ED N=20, J2=0.4
+N=20 J2=0.4 chi=64: warmup E=-7.587941015368
+  sweep 1: E=-7.587941015406, eps=6.328e-14
+  sweep 2: E=-7.587941015406, eps=6.328e-14
+Dimer scan ED N=12, J2=0.5
+Dimer scan ED N=16, J2=0.5
+Dimer scan ED N=20, J2=0.5
+N=20 J2=0.5 chi=64: warmup E=-7.500000000000
+  sweep 1: E=-7.500000000000, eps=1.554e-15
+  sweep 2: E=-7.500000000000, eps=2.887e-15
+Dimer scan ED N=12, J2=0.6
+Dimer scan ED N=16, J2=0.6
+Dimer scan ED N=20, J2=0.6
+N=20 J2=0.6 chi=64: warmup E=-7.600533568637
+  sweep 1: E=-7.600533568914, eps=3.479e-12
+  sweep 2: E=-7.600533568914, eps=3.482e-12
+Dimer scan ED N=12, J2=0.7
+Dimer scan ED N=16, J2=0.7
+Dimer scan ED N=20, J2=0.7
+N=20 J2=0.7 chi=64: warmup E=-7.890871248020
+  sweep 1: E=-7.890871254482, eps=2.467e-10
+  sweep 2: E=-7.890871254482, eps=2.469e-10
+Dimer scan ED N=12, J2=0.8
+Dimer scan ED N=16, J2=0.8
+Dimer scan ED N=20, J2=0.8
+N=20 J2=0.8 chi=64: warmup E=-8.332610584650
+  sweep 1: E=-8.332610651309, eps=2.644e-09
+  sweep 2: E=-8.332610651309, eps=2.645e-09
+Dimer scan ED N=12, J2=0.9
+Dimer scan ED N=16, J2=0.9
+Dimer scan ED N=20, J2=0.9
+N=20 J2=0.9 chi=64: warmup E=-8.884519744430
+  sweep 1: E=-8.884520249138, eps=1.281e-08
+  sweep 2: E=-8.884520248996, eps=1.304e-08
+Dimer scan ED N=12, J2=1.0
+Dimer scan ED N=16, J2=1.0
+Dimer scan ED N=20, J2=1.0
+N=20 J2=1.0 chi=64: warmup E=-9.513882642430
+  sweep 1: E=-9.513883838856, eps=3.620e-08
+  sweep 2: E=-9.513883839296, eps=3.622e-08
+OPTIONAL 3/4 COMPLETE: 557 total checks; 143.8s
+COMPLETE: 557 checks passed; 170.7s

@@ -1,0 +1,43 @@
+{
+  "numerical_checks_passed": 611,
+  "regression_tests_passed": 18,
+  "reported_numeric_tokens_checked": 383,
+  "unique_numeric_tokens": 309,
+  "markdown_and_pdf_match_json": true,
+  "markdown_math_and_links_checked": true,
+  "latex_log_clean": true,
+  "dimer_csv_values_checked": 704,
+  "baseline_csv_rows_checked": 44,
+  "serialized_long_mps_checks": [
+    {
+      "n": 40,
+      "chi": 32,
+      "energy": -17.541472113764012,
+      "difference": 1.7763568394002505e-14,
+      "norm": 1.0000000000000064
+    },
+    {
+      "n": 40,
+      "chi": 64,
+      "energy": -17.54147329840004,
+      "difference": 2.4868995751603507e-14,
+      "norm": 1.000000000000003
+    },
+    {
+      "n": 60,
+      "chi": 32,
+      "energy": -26.4030065728634,
+      "difference": 5.3290705182007514e-14,
+      "norm": 1.0000000000000022
+    },
+    {
+      "n": 60,
+      "chi": 64,
+      "energy": -26.40301511491509,
+      "difference": 5.3290705182007514e-14,
+      "norm": 1.0000000000000082
+    }
+  ],
+  "all_dmrg_runs_converged": true,
+  "source_data_sha256": "727ab2bd0456c79930e173bd20d8813af625081bc03859416de905df6e513d58"
+}

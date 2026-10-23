@@ -1,0 +1,23 @@
+test_dimer_action_and_entropy (test_analysis.AnalysisTests.test_dimer_action_and_entropy) ... ok
+test_projection_energy_is_direct_physical_expectation (test_analysis.AnalysisTests.test_projection_energy_is_direct_physical_expectation) ... ok
+test_asymmetric_charge_svd_and_zero_weights (test_core.CoreTests.test_asymmetric_charge_svd_and_zero_weights) ... ok
+test_every_local_sweep_position_against_physical_hamiltonian (test_core.CoreTests.test_every_local_sweep_position_against_physical_hamiltonian) ... ok
+test_global_charge_selection_and_discard (test_core.CoreTests.test_global_charge_selection_and_discard) ... ok
+test_real_truncation_and_finite_sweep (test_core.CoreTests.test_real_truncation_and_finite_sweep) ... ok
+test_two_spin_normalization (test_core.CoreTests.test_two_spin_normalization) ... ok
+test_untruncated_superblock_and_edge_positions (test_core.CoreTests.test_untruncated_superblock_and_edge_positions) ... ok
+test_asymmetric_random_state_cannot_hide_right_reversal_errors (test_mps_observables.MPSTests.test_asymmetric_random_state_cannot_hide_right_reversal_errors) ... ok
+test_dimer_product_has_exact_bond_profile (test_mps_observables.MPSTests.test_dimer_product_has_exact_bond_profile) ... ok
+test_measurements_are_invariant_under_virtual_gauge (test_mps_observables.MPSTests.test_measurements_are_invariant_under_virtual_gauge) ... ok
+test_state_and_individual_bonds_match_original_bit_basis (test_mps_observables.MPSTests.test_state_and_individual_bonds_match_original_bit_basis) ... ok
+test_affine_intercept_and_independent_fit (test_refinements.RefinementTests.test_affine_intercept_and_independent_fit) ... ok
+test_baseline_is_same_size_same_method_and_abs_before_subtraction (test_refinements.RefinementTests.test_baseline_is_same_size_same_method_and_abs_before_subtraction) ... ok
+test_energy_intercept_uses_signed_energy_errors (test_refinements.RefinementTests.test_energy_intercept_uses_signed_energy_errors) ... ok
+test_enrichment_rejects_incomplete_or_duplicate_chi_sets (test_refinements.RefinementTests.test_enrichment_rejects_incomplete_or_duplicate_chi_sets) ... ok
+test_nonunit_power_is_measured_not_forced (test_refinements.RefinementTests.test_nonunit_power_is_measured_not_forced) ... ok
+test_proportional_errors_give_unit_power_and_known_coefficient (test_refinements.RefinementTests.test_proportional_errors_give_unit_power_and_known_coefficient) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.459s
+
+OK

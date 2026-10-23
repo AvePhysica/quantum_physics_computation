@@ -1,0 +1,291 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LC_ALL = "C.UTF-8",
+	(possibly more locale environment variables)
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the system default locale ("Chinese (Simplified)_China.936").
+Locale 'Chinese (Simplified)_China.936' is unsupported, and may crash the interpreter.
+Initial Win CP for (console input, console output, system): (CP936, CP65001, CP936)
+I changed them all to CP936
+Rc files read:
+  NONE
+Latexmk: This is Latexmk, John Collins, 31 Jan. 2024. Version 4.83.
+No existing .aux file, so I'll make a simple one, and require run of *latex.
+Latexmk: applying rule 'xelatex'...
+Rule 'xelatex':  Reasons for rerun
+Category 'other':
+  Rerun of 'xelatex' forced or previously required:
+    Reason or flag: 'Initial setup'
+
+------------
+Run number 1 of rule 'xelatex'
+------------
+------------
+Running 'xelatex -no-pdf -interaction=nonstopmode -halt-on-error -recorder  "C:/Users/33552/Desktop/����/����/���Ӽ��㷽��/homework/homework5/report/report.tex"'
+------------
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex)
+ restricted \write18 enabled.
+entering extended mode
+(c:/Users/33552/Desktop/物理/计算/量子计算方法/homework/homework5/report/report.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/ctexart.cls
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg)
+(d:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
+(d:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-xetex.def))
+Document Class: ctexart 2022/07/14 v2.5.10 Chinese adapter for class article (C
+TEX)
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/ctexhook.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/ctexpatch.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/base/fix-cm.sty
+(d:/texlive/2024/texmf-dist/tex/latex/base/ts1enc.def))
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/config/ctexopts.cfg)
+(d:/texlive/2024/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(d:/texlive/2024/texmf-dist/tex/latex/base/size10.clo))
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
+(d:/texlive/2024/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+(d:/texlive/2024/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+(d:/texlive/2024/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate-2023-10-10
+.sty)) (d:/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.sty
+(d:/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+(d:/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(d:/texlive/2024/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg)))
+(d:/texlive/2024/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+(d:/texlive/2024/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg))
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-article.d
+ef (d:/texlive/2024/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg))
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/ctex-c5size.clo)
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windows.def))
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/config/ctex.cfg)
+(d:/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+(d:/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty)
+(d:/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
+(d:/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty)))
+(d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(d:/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+(d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(d:/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(d:/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(d:/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+(d:/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+(d:/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(d:/texlive/2024/texmf-dist/tex/latex/graphics-def/xetex.def)))
+(d:/texlive/2024/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+(d:/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(d:/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(d:/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex)))
+(d:/texlive/2024/texmf-dist/tex/latex/adjustbox/adjcalc.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/adjustbox/trimclip.sty
+(d:/texlive/2024/texmf-dist/tex/latex/collectbox/collectbox.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/adjustbox/tc-xetex.def))
+(d:/texlive/2024/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/varwidth/varwidth.sty))
+(d:/texlive/2024/texmf-dist/tex/latex/float/float.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+(d:/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(d:/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(d:/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(d:/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(d:/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(d:/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(d:/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/hyperref/nameref.sty
+(d:/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty)
+(d:/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(d:/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(d:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(d:/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def)
+(d:/texlive/2024/texmf-dist/tex/latex/url/url.sty)
+(d:/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
+(d:/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(d:/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(d:/texlive/2024/texmf-dist/tex/latex/hyperref/hxetex.def
+(d:/texlive/2024/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(d:/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(d:/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(d:/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty) (./report.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+(d:/texlive/2024/texmf-dist/tex/latex/graphics/color.sty
+(d:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(d:/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+(d:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(d:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd)
+No file report.toc.
+[1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17]
+(./report.aux)
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+Output written on report.xdv (17 pages, 247256 bytes).
+Transcript written on report.log.
+Latexmk: Missing input file 'report.toc' (or dependence on it) from following:
+  No file report.toc.
+Latexmk: Getting log file 'report.log'
+Latexmk: Examining 'report.fls'
+Latexmk: Examining 'report.log'
+Latexmk: References changed.
+Latexmk: References changed.
+Latexmk: Log file says output to 'report.xdv'
+Latexmk: applying rule 'xelatex'...
+Rule 'xelatex':  Reasons for rerun
+Changed files or newly in use/created:
+  report.aux
+  report.out
+  report.toc
+
+------------
+Run number 2 of rule 'xelatex'
+------------
+------------
+Running 'xelatex -no-pdf -interaction=nonstopmode -halt-on-error -recorder  "C:/Users/33552/Desktop/����/����/���Ӽ��㷽��/homework/homework5/report/report.tex"'
+------------
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex)
+ restricted \write18 enabled.
+entering extended mode
+(c:/Users/33552/Desktop/物理/计算/量子计算方法/homework/homework5/report/report.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/ctexart.cls
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg)
+(d:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
+(d:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-xetex.def))
+Document Class: ctexart 2022/07/14 v2.5.10 Chinese adapter for class article (C
+TEX)
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/ctexhook.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/ctexpatch.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/base/fix-cm.sty
+(d:/texlive/2024/texmf-dist/tex/latex/base/ts1enc.def))
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/config/ctexopts.cfg)
+(d:/texlive/2024/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(d:/texlive/2024/texmf-dist/tex/latex/base/size10.clo))
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
+(d:/texlive/2024/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+(d:/texlive/2024/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+(d:/texlive/2024/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate-2023-10-10
+.sty)) (d:/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.sty
+(d:/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+(d:/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(d:/texlive/2024/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg)))
+(d:/texlive/2024/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+(d:/texlive/2024/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg))
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-article.d
+ef (d:/texlive/2024/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg))
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/ctex-c5size.clo)
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windows.def))
+(d:/texlive/2024/texmf-dist/tex/latex/ctex/config/ctex.cfg)
+(d:/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+(d:/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty)
+(d:/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
+(d:/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty)))
+(d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(d:/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+(d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(d:/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(d:/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(d:/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+(d:/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+(d:/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(d:/texlive/2024/texmf-dist/tex/latex/graphics-def/xetex.def)))
+(d:/texlive/2024/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+(d:/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(d:/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(d:/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex)))
+(d:/texlive/2024/texmf-dist/tex/latex/adjustbox/adjcalc.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/adjustbox/trimclip.sty
+(d:/texlive/2024/texmf-dist/tex/latex/collectbox/collectbox.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/adjustbox/tc-xetex.def))
+(d:/texlive/2024/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/varwidth/varwidth.sty))
+(d:/texlive/2024/texmf-dist/tex/latex/float/float.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+(d:/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(d:/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(d:/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(d:/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(d:/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(d:/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(d:/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/hyperref/nameref.sty
+(d:/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty)
+(d:/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(d:/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(d:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(d:/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def)
+(d:/texlive/2024/texmf-dist/tex/latex/url/url.sty)
+(d:/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
+(d:/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(d:/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(d:/texlive/2024/texmf-dist/tex/latex/hyperref/hxetex.def
+(d:/texlive/2024/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(d:/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(d:/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(d:/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(d:/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty) (./report.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+(d:/texlive/2024/texmf-dist/tex/latex/graphics/color.sty
+(d:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(d:/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (./report.out)
+(./report.out) (d:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(d:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd) (./report.toc) [1]
+[2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17]
+(./report.aux) )
+Output written on report.xdv (17 pages, 255120 bytes).
+Transcript written on report.log.
+Latexmk: Getting log file 'report.log'
+Latexmk: Examining 'report.fls'
+Latexmk: Examining 'report.log'
+Latexmk: Log file says output to 'report.xdv'
+Latexmk: applying rule 'xdvipdfmx'...
+Rule 'xdvipdfmx':  Reasons for rerun
+Changed files or newly in use/created:
+  report.xdv
+Category 'changed_source_rules':
+  xelatex
+Category 'no_dest':
+  xdvipdfmx
+
+------------
+Run number 1 of rule 'xdvipdfmx'
+------------
+------------
+Running 'xdvipdfmx -E -o "report.pdf"  "report.xdv"'
+------------
+report.xdv -> report.pdf
+[1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17]
+438540 bytes written
+Reverting Windows console CPs to (in,out) = (936,65001)
+Latexmk: All targets (report.xdv report.pdf) are up-to-date
+
+Generated figures, README.md, result.md, validation.md, and LaTeX report.

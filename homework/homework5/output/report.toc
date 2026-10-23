@@ -1,0 +1,26 @@
+\contentsline {section}{\numberline {1}模型、约定与算法}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}块算符、第二套边缘算符与超块}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}截断逻辑：全局维数限制和一致算符更新}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}生长与扫描}{3}{subsection.1.3}%
+\contentsline {section}{\numberline {2}必做 1：不截断超块与精确对角化}{3}{section.2}%
+\contentsline {section}{\numberline {3}必做 2：密度矩阵截断与块能量截断}{3}{section.3}%
+\contentsline {section}{\numberline {4}必做 3：infinite DMRG 生长}{4}{section.4}%
+\contentsline {section}{\numberline {5}必做 4：finite DMRG 扫描}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}$J_2=0.0$，$N=20,\chi =32$}{5}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}$J_2=0.3$，$N=20,\chi =32$}{5}{subsection.5.2}%
+\contentsline {section}{\numberline {6}必做 5：收敛诊断与能量方差}{5}{section.6}%
+\contentsline {subsection}{\numberline {6.1}精确基态能量方差}{6}{subsection.6.1}%
+\contentsline {section}{\numberline {7}必做校检：小尺寸和 MG 点}{7}{section.7}%
+\contentsline {subsection}{\numberline {7.1}开边界与周期边界}{7}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Majumdar–Ghosh 点}{7}{subsection.7.2}%
+\contentsline {section}{\numberline {8}独立校检策略与故意注错}{8}{section.8}%
+\contentsline {section}{\numberline {9}选做 1：纠缠剖面与典型态}{9}{section.9}%
+\contentsline {section}{\numberline {10}选做 2：保留维数外推}{9}{section.10}%
+\contentsline {subsection}{\numberline {10.1}能量误差与丢弃权重的定量关系}{10}{subsection.10.1}%
+\contentsline {section}{\numberline {11}选做 3：更长开链与热力学极限}{12}{section.11}%
+\contentsline {subsection}{\numberline {11.1}长链的独立物理校检}{12}{subsection.11.1}%
+\contentsline {section}{\numberline {12}选做 4：二聚化关联与有限尺寸限制}{13}{section.12}%
+\contentsline {subsection}{\numberline {12.1}精确有限尺寸对照}{14}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}已知相图对照与同尺寸基线扣除}{14}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}独立校检与精度}{16}{subsection.12.3}%
+\contentsline {section}{\numberline {13}源码、复现与开发修正}{17}{section.13}%
